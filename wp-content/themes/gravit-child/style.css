@@ -1,0 +1,1734 @@
+/*
+ Theme Name:   Gravit-Child
+ Theme URI:    http://31stbrklyn.com/gravit-child
+ Description:  Gravit Child Theme
+ Author:       January Johnson-Ansa
+ Author URI:   http://dezineshop.co
+ Template:     gravit
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, hero header, two-columns, sidebar, responsive-layout, accessibility-ready, social icons
+ Text Domain:  gravit-child
+*/
+
+.fa.fa-phone, .fa.fa-mobile-phone, .celly, .phone{
+	/*display: none;*/
+}
+
+body{
+	font-family: "Open Sans", sans-serif;
+}
+a, a:visited, a:hover, a.email:hover, a.fb:hover{
+	color: inherit;
+	text-decoration: none;
+}
+/*-----------------icons-------------------*/
+.fa{
+	color: #CC3617;
+}
+/*------------------------------------------*/
+.notify{
+	z-index: 500;
+}
+.modal
+hr{
+	margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.header-image {
+    padding: 40px 10px 10px;
+    margin-bottom: 0;
+}
+.menu-mobile .site-branding-mobile{
+	float: none;
+	text-align: center;
+}
+/*#menu-toggle {
+	margin-top: 20px;
+	cursor: pointer;
+	font-size: 32px;
+	color: #EF3636;
+	position: absolute;
+	top: 0;
+	right: 0;
+}*/
+#site-navigation-mobile .current_page_item a, #site-navigation-mobile .current-menu-item a {
+    background-color: rgba(9, 191, 196, 0.5);
+}
+.sidebar, .bottom, .bottom div{
+	margin: 0;
+	padding: 0;
+	background: transparent;
+}
+.widget, #secondary, #LeftBar{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.widget-area{
+	margin: 0;
+}
+.widget li{
+	list-style: none;
+}
+
+aside hr{
+	margin-bottom: 0;
+}
+
+#wp-calendar tbody td{
+	padding: 5px;
+}
+
+#wp-calendar tfoot #prev a{
+	padding-left: 25px;
+}
+
+.post.thin .featured-nav {
+	bottom:22px;
+	left:10px;
+}
+#LeftBar .widget-area #text-4 h1.widget-title{
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.5rem;
+}
+input.search-field {
+    width: 100%;
+    padding: 0;
+}
+.widget_search input[type="search"]{
+	height: 0;
+}
+form.search-form{
+	position: relative;
+}
+.fa.fa-search {
+    position: absolute;
+    top: 4px;
+    left: 80%;
+    color: #CC3617;
+    /*transition: opacity 0.5s ease;*/
+    border: none;
+    margin: 0;
+    height: auto;
+    padding: 0;
+}
+.clearfix:after{
+	content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+ul.slides {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+p.about_text {
+    text-align: left;
+    font-size: 2rem;
+    line-height: 3.5rem;
+}
+.flex-viewport {
+    padding-bottom: 30px;
+}
+.flex-control-nav{
+	 bottom: 0;
+    width: 100px;
+    left: 50%;
+}
+.flex-control-nav li a.flex-active{
+	background-color: #11B79E;
+}
+.flex-control-nav li a{
+	border-color: #11B79E;
+}
+/* Pause/Play */
+.flex-pauseplay a { display: block; width: 20px; height: 20px; position: absolute; bottom: 5px; left: 10px; opacity: 0.8;  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; z-index: 10; overflow: hidden; cursor: default; color: #000; font-size: 20px;
+    line-height: 18px; opacity: 0; transition: opacity 0.15s;  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+.flex-pauseplay a:before  { font-family: "FontAwesome"; font-size: 20px; display: inline-block; content: ''; }
+.flex-pauseplay a:hover  { opacity: 0; }
+.flex-pauseplay a.flex-play:before { content: '\f04b'; }
+.map, .mapfooter {
+    margin-left: 30px;
+    /*padding: 20px 10px;*/
+    cursor: pointer;
+}
+.flex-pauseplay .playPause{
+	opacity: 1;
+	 /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	transition: opacity 0.15s;
+	cursor: pointer;
+}
+.flex-pauseplay .playPause:hover{
+	opacity: 1;
+	 /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.map span.fa.fa-map-marker, .mapfooter span.fa.fa-map-marker{
+	margin-left: -30px;
+}
+.widget-text #map span#close {
+    left: 50%;
+}
+
+.site-branding{
+	max-width: 600px;
+}
+.header-image{
+	max-width: 100%;
+	max-height: 1005;
+}
+
+.main-navigation li{
+	font-size: 2rem;
+	font-family: "museo-sans-condensed", sans-serif;
+}
+.main-navigation li a {
+    color: #4b4a47;
+}
+.main-navigation li a:hover{
+	border-bottom:  2px solid red;
+}
+
+/*Highlighting links on the menu to tell vistors where they are in the site
+===========================================================================================*/
+ .page-template-page-contact .hfeed.site .site-header .main-navigation .contact_link a,
+ .page-template-template-programs .hfeed.site .site-header .main-navigation .programming_link a,
+ .single-programming_projects .hfeed.site .site-header .main-navigation .programming_link a,
+ .page-template-page-associate-artist .hfeed.site .site-header .main-navigation .menu-item-76 a, 
+ .page-template-page-about-brklyn .hfeed.site .site-header .main-navigation .page-item-7 a,
+/*For each sub category under programs
+----------------------------------------------------------------*/
+/*Presentations
+------------------------------------------------------------------------------------------------*/
+ .page-template-template-presentations .hfeed.site .site-header .main-navigation .programming_link a,
+ .page-template-template-presentations #nav_menu-9 .menu-programs-container .menu-item-182 a,
+ .single-programming_projects .presentations ul#menu-programs .presentation a,
+ 
+ /*Productions
+ ----------------------------------------------------------------------------------------------*/
+ .page-template-template-productions .hfeed.site .site-header .main-navigation .programming_link a,
+ .page-template-template-productions #nav_menu-9 .menu-programs-container .menu-item-183 a,
+ .single-programming_projects .productions ul#menu-programs .production a,
+ 
+ /*Processes
+ ---------------------------------------------------------------------------------------------*/
+ .page-template-template-processes .hfeed.site .site-header .main-navigation .programming_link a,
+ .page-template-template-processes #nav_menu-9 .menu-programs-container .menu-item-184 a,
+ .single-programming_projects .processes ul#menu-programs .process a,
+
+ /*Current Programming
+ ----------------------------------------------------------------------------------------------*/
+ .page-template-template-current_programs .hfeed.site .site-header .main-navigation .programming_link a,
+ .page-template-template-current_programs #menu-program-schedule .menu-item-187 a,
+ .single-programming_projects .Current ul#menu-program-schedule .current a,
+ /*Future Programming
+ --------------------------------------------------------------------------------------------------*/
+ .page-template-template-future_programs .hfeed.site .site-header .main-navigation .programming_link a,
+ .page-template-template-future_programs #menu-program-schedule .menu-item-188 a,
+ .single-programming_projects .Future ul#menu-program-schedule .future a,
+ /*Past Programming
+ --------------------------------------------------------------------------------------------------*/
+ .page-template-template-past_programs .hfeed.site .site-header .main-navigation .programming_link a,
+ .page-template-template-past_programs #menu-program-schedule .menu-item-192 a,
+ .single-programming_projects .Past ul#menu-program-schedule .past a,
+ /*For each sub category under Associate Artist
+ ---------------------------------------------------------------------------------------------------*/
+ .single-associate_artist .hfeed.site .site-header .main-navigation .menu-item-76 a, 
+ .program_details,
+ .artist_bio,
+/*For each sub-menu item of a matching single project post*/
+.single-programming_projects .presentations ul#menu-programs .presentation ul li a.red,
+.single-programming_projects .productions ul#menu-programs .production ul li a.red,
+.single-programming_projects .processes ul#menu-programs .process ul li a.red,
+.single-programming_projects .Current ul#menu-program-schedule .current ul li a.red,
+.single-programming_projects .Future ul#menu-program-schedule .future ul li a.red,
+.single-programming_projects .Past ul#menu-program-schedule .past ul i a.red,
+/*In the footer
+-----------------------------------------------------------------------------------------*/
+.single-programming_projects .footer.presentations #footerBar .menu-programs-container ul .presentation ul li a.red,
+.single-programming_projects .footer.productions #footerBar .menu-programs-container ul .production ul li a.red,
+.single-programming_projects .footer.processes #footerBar .menu-programs-container ul .process ul li a.red,
+.single-programming_projects .footer.Current #footerBar .menu-program-schedule-container ul .current ul li a.red,
+.single-programming_projects .footer.Future #footerBar .menu-program-schedule-container ul .future ul li a.red,
+.single-programming_projects .footer.Past #footerBar .menu-program-schedule-container ul .past ul li a.red,
+/*-------------------------------------------------------------------------------------*/
+.category-presentations ul#menu-programs .presentation a,
+.category-productions ul#menu-programs .production a,
+.category-processes ul#menu-programs .process a,
+.category-current_programs ul#menu-program-schedule .current a,
+.category-future_programs ul#menu-program-schedule .future a,
+.category-past_programs ul#menu-program-schedule .past a,
+/*In the footer
+---------------------------------------------------------------------------------------------------- */
+.category-presentations .footer.presentation #footerBar .menu-programs-container .presentation a,
+.category-productions .footer.production #footerbar .menu-programs-container .production a,
+.category-processes .footer.process #footerBar .menu-programs-container .process a,
+.category-current_programs .footer.Current #footerBar .menu-program-schedule-container .current a,
+.category-future_programs .footer.Future #footerBar .menu-program-schedule-container .future a,
+.category-past_programs .footer.Past #footerBar .menu-program-schedule-container .past a,
+/*--------------------------------------------------------------------------------------------------*/
+.category-presentations .hfeed.site .site-header .main-navigation .programming_link a,
+.category-productions .hfeed.site .site-header .main-navigation .programming_link a,
+.category-processes .hfeed.site .site-header .main-navigation .programming_link a,
+.category-current_programs .hfeed.site .site-header .main-navigation .programming_link a,
+.category-future_programs .hfeed.site .site-header .main-navigation .programming_link a,
+.category-past_programs .hfeed.site .site-header .main-navigation .programming_link a{
+	color: red;
+	border-color: red; 
+}
+.page-template .hfeed.site .site-header .main-navigation .programming_link ul li a,
+.single-programming_projects .hfeed.site .site-header .main-navigation .programming_link ul li a,
+.single-programming_projects .presentations ul#menu-programs .presentation ul li a,
+.single-programming_projects .productions ul#menu-programs .production ul li a,
+.single-programming_projects .processes ul#menu-programs .process ul li a,
+.single-programming_projects .Current ul#menu-program-schedule .current ul li a,
+.single-programming_projects .Future ul#menu-program-schedule .future ul li a,
+.single-programming_projects .Past ul#menu-program-schedule .past ul li a,
+/*In the Footer 
+------------------------------------------------------------------------------------------------------ */
+.page-template .footer #footerbar ul#menu-programs li a,
+.single-programming_projects .footer.presentations .menu-programs-container .presentation ul li a,
+.single-programming_projects .footer.productions .menu-programs-container .production ul li a,
+.single-programming_projects .footer.processes .menu-programs-container .process ul li a,
+.single-programming_projects .footer.Current .menu-program-schedule-container .current ul li a,
+.single-programming_projects .footer.Future .menu-program-schedule-container .future ul li a,
+.single-programming_projects .footer.Past .menu-program-schedule-container .past ul li a
+ {
+    color: #4b4a47;
+    border-color: transparent;
+}
+#menu-programs li ul.sub-menu, #menu-program-schedule li ul.sub-menu, .listHide, .menu-programs-container li ul.sub-menu, .menu-program-schedule-container, li ul.sub-menu{
+	display: none;
+}
+#menu-programs li ul.sub-menu.show-sub, #menu-program-schedule li ul.sub-menu.show-sub, .listShow{
+	display: block;
+}
+/*Show appropriate sub-menu for sigle project post*/
+.single-programming_projects .presentations ul#menu-programs .presentation ul,
+.single-programming_projects .productions ul#menu-programs .production ul,
+.single-programming_projects .processes ul#menu-programs .process ul,
+.single-programming_projects .Current ul#menu-program-schedule .current ul,
+.single-programming_projects .Future ul#menu-program-schedule .future ul,
+.single-programming_projects .Past ul#menu-program-schedule .past ul
+{
+	display: block;
+}
+/*Hide page menus 
+-------------------------------------------------------------------------------------------------------------- */
+.menu-artist-container, .widget.widget_calendar, .menu-programs-container, .menu-program-schedule-container, .home .widget-title, .home .widget-text{
+    /*display: none;*/
+}
+/*Show footer menus
+-------------------------------------------------------------------------------------------------------------------------------------------- */
+.footer .menu-artist-container, .footer .widget.widget_calendar, .footer .menu-programs-container, .footer .menu-program-schedule-container{
+    display: block;
+}
+/*Projects Menu
+----------------------------------------------------------------------------------------------------------------------------------------------*/
+.page-template-template-programs li.menu-item-object-programming_projects,
+.single-programming_projects li.menu-item-object-programming_projects{
+	padding: 15px 0 0 ;
+	border-bottom: 1px dotted #333;
+}
+
+.menu-projects-container .nav-menu {
+	list-style: none;
+    margin: 0;
+    position: relative;
+}
+
+#menu-projects span.sub {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 0 0 15px 15px;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    display: none;
+}
+span.sub > p {
+    padding: 15px;
+}
+
+#menu-projects li.project_link a:hover > span.sub{
+	display: block;
+}
+
+/*Home Page features
+===========================================*/
+
+/*Modal*/
+.modal {
+    /*visibility: hidden;
+	backface-visibility: hidden;*/
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    transform: translate(-50%, 50%);
+    margin-left: 50%;
+    width: 70%;
+}
+
+.modal-content img {
+	border-radius: 10px;
+    box-shadow: 4px 3px 9px 8px #ccc;
+    max-width: 100%;
+    
+}
+.md-show {
+	visibility: visible;
+}
+
+
+.md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: rgba(143,27,15,0.8);
+	transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+.md-perspective,
+.md-perspective body {
+	height: 100%;
+	overflow: hidden;
+}
+
+.md-perspective body  {
+	background: #222;
+	perspective: 600px;
+}
+
+.md-container {
+	background: #e74c3c;
+	min-height: 100%;
+}
+/* The Close Button */
+.modal-content span.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-content span.close:hover,
+.modal-content span.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+main#main {
+    display: flex;
+    flex-flow: row wrap;
+}
+aside#leftaside {
+    order: 4;
+}
+/*
+---------------------------------------------------------------*/
+#featured {
+	position:relative;
+	max-width:900px;
+	height:390px;
+	overflow:hidden;
+	margin:20px auto;
+
+}
+
+.feature {
+
+	max-width:900px;
+	max-height:390px;
+	color:#fff;
+	font:15px/20px 'Dosis';
+	font-weight:normal;
+	text-transform:uppercase;
+	text-align:center;
+	cursor:pointer;
+	background-color: #000;
+}
+
+
+.post .featured-nav a:hover,.post .featured-nav li.selected a {
+	border:0;
+}
+
+
+div#featured_img {
+   /* max-width: 900px;
+    max-height: 390px;*/
+    margin: 0 auto;
+}
+
+.feature img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:0;
+	max-width: 100%;
+	/*min-height: 100%;
+	min-width: 100%;*/
+}
+#featured_img a{
+	text-decoration: none;
+}
+.feature h3 {
+	font-size:35px;
+	margin-top:120px;
+	position: relative;
+	z-index: 1;
+}
+
+.feature h3  {
+	color:#fff;
+}
+
+.feature span {
+	display:inline-block;
+	border-bottom: 1px dotted #fff;
+	padding:12px 0px;
+}
+
+.feature.over a span,.feature a:hover span {
+	border-bottom:3px solid #0000ff;
+}
+
+.feature h4,.feature h5 {
+	padding:0;
+	margin:20px 0px;
+	position: relative;
+	color: #fff;
+	z-index: 1;
+}
+
+.feature h5 {
+	position:absolute;
+	left:0px;	
+	width:100%;
+	font:15px/20px 'ProximaNovaBold';
+	font-weight:normal;
+	top: 0;
+}
+.bg_overlay {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(3, 4, 5, .55);
+    /*left: 15%;*/
+    opacity: 1;
+     /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    transition: opacity 0.25s ease;
+}
+#feature-1:hover  .bg_overlay{
+	opacity: 1;
+	 /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	transition: opacity 0.25s ease ;
+}
+.home .program-title{
+	display: block;
+}
+.home #rightaside{
+	/*display: none;*/
+}
+/*Artist Page
+====================================================*/
+.container{
+	border-top: 1px solid #000;
+}
+.container div#content {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.page_title h2{
+    border-bottom: 1px solid #3b3f3f;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 0 10px 0;
+    margin: 0;
+}
+.artist {
+  height: 250px;
+  width: 55%;
+}
+img.artist_img {
+  max-height: 100%;
+  min-width: 100%;
+
+}
+
+.artist_name{
+	display: block;
+}
+.current-projects, .associate_artist{
+	position: relative;
+	width: 100%;
+	transition: all 0.25s ease-in-out;
+}
+.current-projects > a, .associate_artist a{
+    display: block;
+    font-size: 0;
+
+}
+.project, .artist{
+	position: relative;
+}
+.project, .project_details, .artist{
+	display: block;
+}
+.current-projects .project img.feature, img.related_img, .artist img.artist_img{
+	max-width: 100%;
+	width: 100%;
+	min-height: 100%;
+}
+
+img.feature{
+	width: 100%;
+	height: 100%;
+}
+
+.current-projects .project{
+	height: 350px;
+}
+.post, .post .project{
+	 overflow: hidden;
+  position: relative;
+}
+/*.project img{
+  -webkit-transition: all 1.5s linear;
+          transition: all 1.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+.post:hover a img{
+  -webkit-transform: scale3d(.8, .8, .8);
+          transform: scale3d(.8, .8, .8);
+    -webkit-transition: all 1.85s ease;      
+    	transition: all 1.85s ease;
+}
+*/.description, .artist_name{
+	 position: absolute;
+    bottom: 0;
+    z-index: 0;
+	-webkit-transition:height 0.25s ease-in-out, visibility 0.3s, opacity 0.2s linear;
+	-moz-transition:height 0.25s ease-in-out, visibility 0.3s, opacity 0.2s linear;
+	-o-transition:height 0.25s ease-in-out, visibility 0.3s, opacity 0.2s linear;
+	transition:height 0.25s ease-in-out, visibility 0.3s, opacity 0.2s linear;
+    height: 40%;
+    background-color: rgba(204, 0, 1, 0.8);  
+	width: 100%;
+	visibility: visible;
+	opacity: 1;
+	 /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	margin: 0;
+	padding: 0;
+	border: none;
+	bottom: 0;
+}
+.description h2, .artist_name h2, .description p{
+	color: #fff;
+	bottom: 0;
+	margin-bottom: 0;
+	position: absolute;
+	max-height: 100%;
+	max-width: 100%;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 2rem;
+}
+.description p, .post .description h2{
+	position: relative;
+	color: #000;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+.post .description {
+ background: rgba(255, 255, 255, 0.6);
+}
+.body_feature .post a .description p {
+    margin-top: 30px;
+}
+#rightaside h4 {
+    border-bottom: 1px solid #c9c9c9;
+}
+div#content {
+    /*border-top: 2px solid;*/
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.excerpt {
+    position: absolute;
+    top: 0;
+    width: 45%;
+    left: 55%;
+    padding: 5px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.excerpt p a, .about_excerpt{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    word-wrap: break-word;
+    color: #090909;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-decoration: none;
+}
+a.more-link {
+	margin: 0;
+	padding: 0;
+    background: transparent;
+    color: #000 !important;
+    border: none;
+    box-shadow: none;
+}
+
+#leftaside.assoc{
+	border-right: 1px solid;
+}
+
+ul.assoc_nav, ul.about_nav, ul.about_nav li ul, ul#menu-artist, ul#menu-programs, ul#menu-program-schedule{
+	width: 100%;
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding-top: 10px;
+}
+ul.assoc_nav li, ul.about_nav li, ul.about_nav li ul li, ul#menu-artist li, ul#menu-programs li{
+	padding: 15px 0 0 0px;
+	border-bottom: 1px dotted #333;
+}
+
+ul#menu-program-schedule li {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin: 20px 0;
+    padding: 0;
+}
+ul.assoc_nav li a, ul.about_nav li a, ul.about_nav li ul li a, ul#menu-artist li a, ul#menu-programs li a, ul#menu-program-schedule li a{ 
+	color: #000;
+}
+/*body:after, .main:after{
+	content: "";
+	display: block;
+	background: url('./images/pattern_hipster_5.jpg') no-repeat top center;
+	background-size: cover;
+	opacity: 0.1;
+	 /* IE 8 
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	z-index: -200;
+}*/
+.proj_bottom{
+	position: relative;	
+}
+.pro_details {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 30px;
+}
+.program_details {
+	margin-left: 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+.program_details span{
+	display: block;
+	text-align: center;
+}
+/*About
+================================================ */
+.about_content {
+    display: flex;
+    flex-flow: row wrap;
+}
+.about_content aside {
+    order: 2;
+}
+.statements {
+    order: 1;
+}
+#about{
+    display: block;
+}
+.headline{
+	margin-bottom: 5rem;
+  color: #303033; #b6b5b5;
+  border-bottom: 2vh solid rgb(205, 3, 4);
+}
+.headline h3{
+	font-family: 'Dosis', sans-serif;
+	font-weight: 800;
+	text-align: center;
+}
+.headline span{
+ color: rgb(205, 3, 4);
+}
+.headline p{
+	line-height: 60px;
+}
+
+.mission{
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+	color: #202022;#999;
+}
+.mission p{	
+	font-size: 24px;
+	line-height: 40px;	
+}
+h3.title {
+    text-transform: uppercase;
+}
+
+h3.title:first-letter {
+    font-size: 6rem;
+}
+
+.mission, aside.about {
+    margin: 0;
+}
+h3.title {
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+.about_page, .contact_page{
+	border: none;
+}
+.container.about_page{
+	border-top: 1px solid #000;
+}
+.site-footer{
+	background: transparent;
+}
+/*Contact
+================================================= */
+#contact{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #000;
+}
+.contactinfo{
+	text-align: center;
+}
+.contactinfo h1{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin-bottom: 2.5rem;
+}
+.address{
+	margin: 20px 0 50px;
+}
+.address p:first-child{
+  margin: 0;
+}
+.directions p, .phone p{
+	display: inline-block;
+	margin: 0 0 0 39px;
+}
+.fa.fa-map-marker, .fa.fa-mobile-phone{
+  	color: #CC3617;
+  	transition: margin 0.5s ease-in-out;
+}
+
+.directions:hover > .fa.fa-map-marker, #phone:hover > .fa.fa-mobile-phone {
+	margin: 0 0 0 5px;
+}
+.emails p a:hover{
+	color: #000;
+}
+.reach .fa.fa-envelope {
+    color: #CC3617;
+    display: inline-block;
+    padding: 0 15px;
+}
+.directions, .business p:last-child, .inquire > p:last-child,  #phone{
+  padding: 10px 0;
+  border: 1px solid rgba(9, 191, 196, 0.5);		
+  /*border: 1px solid  #f5f5f5;*/
+  cursor: pointer;
+  transition: border-color 0.25s ease; 
+}
+.show_form,{
+	padding: 10px 0;
+	border: 1px solid  #f5f5f5;
+  	cursor: pointer;
+  	transition: border-color 0.25s ease; 
+}
+div#phone a {
+    text-decoration: none;
+    color: inherit; 
+}
+#map, #footermap {
+	bottom: auto;
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  height: 0%;
+  min-height: 0;
+  opacity: 0;
+   /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  position: absolute;
+  top: auto;
+  left: 0;
+  transform: rotate(-108deg) translateX(-100%);
+  width: 0%;
+  z-index: 300;
+  transition: all 0.85s ease;
+}
+.fa.fa-minus-square {
+  color: white;
+  cursor: pointer;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 10%;
+}
+#map_brklyn{
+	width: 85%;
+	margin: 50% auto;
+	max-height: 500px;
+	height: 35%;
+}
+#map.show_map, #footermap.show_map {
+  bottom: 0;
+  height: auto;
+  min-height: 100%;
+  opacity: 1;
+   /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  top: 0;
+  transform: rotateZ(0deg) translateX(0%);
+  width: 100%;
+  min-width: 100%;
+  transition: all 0.5s ease;
+}
+.directions:hover, .business p:last-child:hover, .inquire > p:last-child:hover, .show_form{
+	animation: borderColor 0.75s forwards;
+} 
+.emails{
+	    padding-top: 3rem;
+	    margin-top: 3.75rem;
+}
+.business p:last-child{
+	margin-bottom: 5px;
+}
+.lable {
+  color: #999;
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+}
+.gif-vid{
+	position: relative;
+	height: 300px;
+	transition: height .15s ease;
+}
+.gif-vid.open_form{
+	height: 630px;
+}
+.shout-out{
+ 	position: absolute;
+	background: rgba(204, 54, 23, 1);
+	width: 260px;
+	height: 260px;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 150;
+}
+.circle-text {
+  left: 50%;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+.contact-text{
+	position: relative;
+}
+.circle-text h3{
+	margin: 5% 0 0 0;
+}
+.circle-text p, .circle-text h4{
+	margin-bottom: 10px;
+	color: #FFFFFF;
+}
+.show_form {
+	cursor: pointer;
+  	margin: 0 auto;
+  	padding: 0;
+  	width: 60%;
+}
+.show_form p {
+  display: inline-block;
+  margin: 0 0 0 -20%;
+  padding: 0;
+}
+span.fa.fa-long-arrow-right{
+	left: 60%;
+	position: absolute;
+	/*padding: 5px;*/
+	transition: margin 0.25s ease-in-out;
+	color:  #f5f5f5;
+}
+.show_form:hover > .fa.fa-long-arrow-right{
+		margin: 0 0 0 10px;
+}
+#contact_form {
+  background: rgba(53, 53, 54, 1) none repeat scroll 0 0;
+  bottom: auto;
+  font-size: 0;
+  height: 0;
+  position: absolute;
+  top: auto;
+  transform: skew(27deg, 36deg);
+  width: 0;
+  opacity: 0;
+   /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  transition: all 0.5s ease;
+  z-index: 300;
+  overflow-x: hidden;
+}
+#contact_form.show{	
+  	bottom: 20px;
+  	font-size: inherit;;
+  	height: auto;
+  	top: 50px;
+  	transform: skew(0);
+  	width: 100%;
+  	opacity: 1;
+  	 /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  	transition: all 0.5s ease;
+}
+span.fa.fa-times-circle-o {
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  height: 20px;
+  margin: 15px 0 0 90%;
+  text-align: center;
+  transform: translateX(-100%);
+  width: 20px;
+}
+.input__field.input__field--haruki {
+   background: rgba(255, 255, 255, 0.05);
+   border-radius: 0;
+  border:none;
+}
+div.input.input--haruki.four.columns {
+  margin-left: 0;
+}
+.input--haruki input[type="email"]:focus, .input--haruki input[type="number"]:focus, .input--haruki input[type="search"]:focus, .input--haruki input[type="text"]:focus, .input--haruki input[type="tel"]:focus, .input--haruki input[type="url"]:focus, .input--haruki input[type="password"]:focus, .input--haruki textarea:focus, .input--haruki select:focus {
+    border: none;
+    outline: 0;
+    color: white;
+}
+form.form {
+  float: none;
+  margin: 0 auto;
+}
+label.input__label.input__label--haruki {
+  top: -6px;
+}
+span.input__label-content.input__label-content--haruki {
+    margin-left: 15px;
+}
+.input--haruki {
+    margin: 1em 1em 1em;
+}
+.input.input--haruki.twelve.columns {
+    margin: 15px 0 0 0;
+}
+textarea#mesg {
+	 min-height: auto ;
+	 /*resize: none;*/
+}
+.g-recaptcha {
+    position: absolute;
+    top: 85%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+button.submission {
+  	color: #777;
+  	font-size: 24px;
+  	margin-left: 50%;
+  	transform: translateX(-50%);
+   	margin-top: 30px;
+   	padding: 0 50px;
+}
+i#process_icon.fa{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+}
+p.message{
+	color: white;
+    width: 60%;
+    margin: 0 auto;
+}
+button.submission, p.message{
+	margin-bottom: 0;
+}
+#the_form.success button.submission .fa{
+	color: #0BCE63;
+}
+#the_form.error button.submission .fa{
+	color: #B73913;
+}
+.notify .notify-close{
+	width: 25px;
+	left: 80%;
+}
+/* Associate Artist
+================================================= */
+.content{
+	min-height: 100%;
+	height: auto;
+	border: none;
+}
+#associate{
+	width: 100%;
+	transition: all 0.33s ease-in-out; 
+}
+.col{
+	margin-left: -4px;
+	width: 50%;
+	font-size: 0;
+}
+#associate .headline{
+	border: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.headline .associate_artist_title, .bio, .cat_title{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+}
+.headline .associate_artist_title, .cat_title{
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.headline p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: left;
+    margin: 0;  
+}
+.thumb{
+	
+}
+img.thumbnail{
+	max-width: 100%;
+}
+.categories{
+	margin-bottom: 20px;
+	color: #191919;
+	line-height: 2.3rem;
+	padding-top: 10px;
+}
+.categories a{
+	text-decoration: none;
+	color: #191919;
+}
+.categories p{
+	margin: 0;
+	border-bottom: 1px solid;
+}
+
+.artist_bio {
+    font-size: 0;
+    border-top: 1px dotted;
+    border-bottom: 1px dotted; 
+}
+.artist_bio span {
+    font-size: 1.5rem;
+}
+.bio {
+    text-align: left;
+    color: #191919;
+    margin-left: 4%;
+    margin-top: 20px;
+}
+
+.bio p:nth-child(1) {
+	padding-bottom: 20px;
+	border-bottom: 2vh solid rgb(205, 3, 4);
+}
+.related_post:nth-of-type(even) {
+    margin-right: 0;
+}
+
+.related_post:nth-of-type(odd) {
+    margin-left: 0;
+}
+.related_post {
+    width: calc(100% / 2.3);
+    display: inline-block;
+    margin: 0px 5.5% 0 6.5%;
+}
+ .col.soc{
+	width: 100%;
+	height: 150px;
+	clear: right;
+	margin: 0;
+}
+a.soc_link{
+	display: inline-block;;
+	width: 33.3333%;	
+	height: 150px;
+	background-repeat: no-repeat;
+	background-size: 35%;
+	background-position: center;	
+}
+
+/*Footer
+================================================= */
+.footer{
+	position: relative;
+	padding: 0;
+	margin-top: 30px;
+	height: auto;
+	width: 100%;
+	background: rgba(53, 53, 54, 1);
+}
+.footer hr {
+    border-top: 3px solid #000;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.1);
+    position: absolute;
+    margin: 0;
+    top: 35%;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+}
+footer, footer a{
+	color:#808080;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+}
+footer a:hover{
+	color: #4B4A47;
+}
+footer a, .footer #footerBar ul#menu-programs li a, .footer #footerBar ul#menu-program-schedule li a, #footerBar .sidebar a{
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+footer a:hover, .footer #footerBar ul#menu-programs li a:hover, .footer #footerBar ul#menu-program-schedule li a:hover, #footerBar .sidebar a:hover, .footer .mapfooter:hover{
+	color: #4B4A47;
+}
+.footer #footerBar ul#menu-programs li, .footer #footerBar ul#menu-program-schedule li{
+	padding: 0;
+	margin: 5px 0 10px 0;
+	border: none;
+}
+.footer #footerBar ul#menu-programs, .footer #footerBar ul#menu-program-schedule{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+footer .site_name p a {
+    text-align: left;
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.site_name {
+    text-align: center;
+}
+.logo_font{
+	font-family: '31brklyn';
+	color: #CC3617;
+}  
+.cont_deets{
+	margin-bottom: 1rem;
+	margin-top: 2.5rem;
+}
+footer div.cont_deets{
+	text-align: left;
+}
+.cont_deets p, #footerBar{
+	margin-left: 0;
+	margin-bottom: 0;
+	color: #fff;
+}
+.footer_text{
+	display: flex;
+	width: 100%;
+	transform: translateX(-50%);
+    margin-left: 50%;
+}
+#footerBar, #addressBlock{
+	margin: 4.5rem 0 2.5rem 0;	
+}
+#footerBar{
+	order: 1;
+}
+#footerBar .widget-area aside.widget {
+    display: inline-block;
+    width: 100%;
+    margin-left: 0;
+}
+#footerBar ul{
+	margin-left: 0;
+}
+#addressBlock {
+    order: 2;
+    text-align: right;
+    padding-left: calc(100% - 240px);
+}
+#addressBlock span {
+    color: #CC3617;
+}
+.footer .mapfooter{
+	padding: 0;
+	color: #fff;
+	transition: color 0.15s;
+}
+.footer .mapfooter span.fa.fa-map-marker {
+    position: relative;
+    padding: 0;
+}
+.footer #footermap{
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+.footer span#footerclose {
+    top: 0;
+    right: 50%;
+    bottom: 0;
+    left: 0;
+}
+div#footer_map_brklyn {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    transform: translateY(20%);
+}
+.menu-mobile{
+	background: transparent;
+}
+footer, footer a{
+	padding: 0;
+}
+/*Search
+===============================================================*/
+.long{
+	min-height: 100%;
+}
+.search_link{
+	list-style: none;
+	border-bottom: 1px dotted;
+	padding: 10px 0;
+	font-size: 1.7rem;
+	font-weight: 800;
+}
+.search_link a:hover, .search_link a.active_result_list{
+	color:blue;
+}
+div#articles {
+    border-bottom: 1px solid;
+}
+div#articles p{
+	margin-bottom: 0;
+}
+.search_results{
+	margin-left: 0;
+}
+.result {
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+}
+/* Category Template
+===================================================================================================================== */
+.cat_title{
+	text-transform: uppercase;
+}
+/*Tags template
+===================================================================================================================== */
+p.logo_font.divider {
+    text-align: center;
+    font-size: 3rem;
+    color: red;
+    font-weight: 500;
+}
+.thumb img{
+    box-shadow: -5px 4px 6px rgba(0, 0, 0, .4);
+}
+/*===================================================================================================================*/
+ /*Larger than mobile */
+@media only screen and (min-width: 459px) {
+		.loader h1{
+			font-size: 4rem;
+		}
+		.logo{
+			min-height:	17.5%; 
+		}
+		.gif-vid{
+			height: 360px;
+		}
+		.gif-vid.open_form{
+			height:480px;
+		}
+		.ten.columns.shout-out{
+			width: 300px;
+			height: 300px;
+		}
+		.reach {
+  			float: none;
+  			margin: 0;
+  		}
+  		/*.holder {
+  			margin-left: 50%;
+  	transform: translateX(-50%);
+  		}
+	}*/
+	@media only screen and (min-width: 600px) {
+
+		.modal-content{
+			width: auto;
+		}
+		.loader h1{
+			font-size: 6rem;
+		}
+		.headline h3{
+			font-size: 50px;
+		}
+		.current-projects .project{
+			height: 450px;
+		}
+		.description h2, .artist_name h2, .description p{
+			font-size: 2.1rem;
+		}
+		.gif-vid {
+			height: 460px;
+		}
+		.gif-vid.open_form{
+			height: 580px;
+		}
+		.ten.columns.shout-out{
+			width: 400px;
+			height: 400px;
+		}
+
+	}
+	@media only screen and (min-width: 768px){
+		.modal-content{
+			width: auto;
+		}
+		.loader h1{
+			font-size: 7rem;
+		}
+		main#main{
+			display: block;
+		}
+		.logo{
+			min-height: 26.5%
+		}
+		.body_feature .post a .description p{
+			margin-top: 10px;
+		}
+		.about_content {
+		  	display: block;
+		}
+		.headline h3{
+			font-size: 50px;
+			line-height: 62px;
+		}
+		.mission{
+		margin-left: 20px;
+		}
+		.mission p{
+		font-size: 30px;
+		line-height: 50px;
+		}
+		h3.title{
+			font-size: 3.5rem;
+			line-height: 4.5rem;
+		}
+		.mission p:first-letter{
+			font-size: 9rem;
+		}
+		.container div#content{
+    		margin-left: 4%;
+		}
+		.project_details h3{
+			font-size: 7rem;
+		}
+		.project_details p{
+			font-size: 24px;
+		}
+		.current-projects .project{
+			height: 250px;
+		}
+		.current-projects, .associate_artist{
+         	position: relative;
+    		width: 50%;
+    		transition: all 0.25s ease-in-out;
+		    display: inline-block;
+		    margin: 0 0 0 -2px;
+		    padding: 0 1% 2% 1%;
+         }
+        #project_list .current-projects:nth-of-type(odd){
+         	padding-right: 0;
+         }
+        #project_list .current-projects:nth-of-type(even){
+         	padding-left: 0;
+         }
+         .projects{
+         	margin-left: 4%;
+         }
+         .description, .artist_name{
+			visibility: hidden;
+			opacity: 0;
+			 /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+			height: 0;
+			width: 98%;
+			bottom: 3%;
+		}
+		.project:hover + .description, .project:active + .description, .project:focus + .description, .description:hover, .artist:hover + .artist_name, .artist:active + .artist_name, .artist:focus + .artist_name, .artist_name:hover, .artist_name{
+			height: 40%;
+			visibility: visible;
+			opacity: 1;
+			 /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		}
+         body.home.page #page.hfeed #content.site-content .content-area #main .projects .current-projects:nth-of-type(odd), .associate_artist:nth-of-type(odd) {
+		    padding-left: 0;
+		}
+		body.home.page #page.hfeed #content.site-content .content-area #main .projects .current-projects:nth-of-type(even), .associate_artist:nth-of-type(even) {
+		    padding-right: 0;
+		}
+		.headline h3.associate_artist_title{
+			font-size: 6rem;
+		}
+		.menu-artist-container {
+    		display: block;
+		}		
+		.related_post {
+		    width: auto;
+		    display: block;
+		    margin: 0;
+		}
+		.contactinfo h1{
+			margin-top: 10%;
+		}
+		.reach, .business, .inquire{
+			margin-bottom: 25px;
+		}
+		.reach{
+			margin-left: 0;
+		}
+		.circle-text p{
+			font-size: 2.5rem;
+			font-weight: 300;
+			line-height: 3.5rem;
+		}
+		.fa.fa-long-arrow-right{
+			transform: translate(0%, 50%);
+		}
+		.ten.columns.shout-out{
+			width: 450px;
+			height: 450px;
+		}
+		 .gif-vid {
+		 	height: 510px;
+		}	
+		.gif-vid.open_form{
+			height: 630px;
+		}
+		.proj_bottom{
+			margin-left: 4%;
+		}
+		.bg_overlay{
+			opacity: 0;
+			 /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		}
+		.menu-artist-container, .widget.widget_calendar, .menu-programs-container, .menu-program-schedule-container, .home .widget-title, .home .widget-text{
+    		display: block;
+		}
+		.home .program-title{
+			display: none;
+		}
+		.home .about6-title, .home #rightaside span{
+			display: block;
+		}
+		.contactinfo h1{
+		margin-top: 5%;
+		}
+		.input.input--haruki.twelve.columns{
+			margin-top: 75px;
+		}
+		button.submission{
+			margin-top: 50px;
+		}
+		.contact_center{
+			padding: 0;
+		}
+		.contactinfo h1, .contactinfo .address{
+			text-align: left;
+		}
+		 .gif-vid{
+			margin-bottom: 55px;
+		}
+		.footer .cont_deets .site_name hr{
+			margin-left: calc(-50% + 10px);
+		}
+		.site_name {
+    		margin-left: 50%;
+		}
+			
+	}
+	@media only screen and (min-width: 800px){
+		.modal-content{
+			width: auto;
+		}
+		header{
+			height: 11%;
+		}
+		.description h2, .artist_name h2, .description p{
+			font-size: 2.8rem;
+		}
+
+		.excerpt p a, .about_excerpt{
+    	font-size: 1.5rem;
+    	line-height: 2.2rem;
+    	}
+    	footer div.cont_deets{
+    		text-align: right;
+    	}
+    	.site_name{
+    		text-align: right;
+    	}
+    	#map_brklyn{
+    		margin: 30% auto;
+    	}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (min-width: 1000px) {
+		.modal-content{
+			width: auto;
+		}
+	.body_feature .post a .description p{
+		margin-top: 0;
+	}	
+	div#main:after{
+			opacity: 0.6;
+			top: 152px;
+			 /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+		}
+	div#main.damask:after{
+			opacity: 0.1;
+			 /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+		}
+    .project_list{
+            left: 0;
+            min-height: 100%;
+         }
+    .projects{
+         	margin-left: 4%;
+         }
+    div.current-projects > div.description{
+			display: block;
+		}
+	.description, .artist_name{
+			bottom: 5%;
+		}	
+	.headline h3.associate_artist_title{
+		font-size: 8rem;
+	}
+	.current-projects.proj_details_ani span.project{
+		width: 40%;
+		float: right;
+	}
+	.current-projects.not-first.proj_details_ani span.project_details{
+		width: 60%;
+		float: left;
+	}
+	
+}
+
+/* Larger than Desktop HD */
+@media only screen and (min-width: 1200px) {
+	.modal-content{
+			width: auto;
+		}
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,800);
+
+
+@font-face {
+  font-family: "31brklyn";
+  src:url("http://31stbrklyn.com/wp-content/themes/gravit-child/fonts/31brklyn.eot");
+  src:url("http://31stbrklyn.com/wp-content/themes/gravit-child/fonts/31brklyn.eot?#iefix") format("embedded-opentype"),
+    url("http://31stbrklyn.com/wp-content/themes/gravit-child/fonts/31brklyn.woff") format("woff"),
+    url("http://31stbrklyn.com/wp-content/themes/gravit-child/fonts/31brklyn.ttf") format("truetype"),
+    url("http://31stbrklyn.com/wp-content/themes/gravit-child/fonts/31brklyn.svg#31brklyn") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}

@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "31brklyn";
+  src:url("http://31stbrklyn.com/wp-content/themes/gravit-child/fonts/31brklyn.eot");
+  src:url("http://31stbrklyn.com/wp-content/themes/gravit-child/fonts/31brklyn.eot?#iefix") format("embedded-opentype"),
+    url("http://31stbrklyn.com/wp-content/themes/gravit-child/fonts/31brklyn.woff") format("woff"),
+    url("http://31stbrklyn.com/wp-content/themes/gravit-child/fonts/31brklyn.ttf") format("truetype"),
+    url("http://31stbrklyn.com/wp-content/themes/gravit-child/fonts/31brklyn.svg#31brklyn") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}

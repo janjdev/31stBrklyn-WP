@@ -1,0 +1,405 @@
+0000.008 (0) Opened log file at time: Mon, 14 May 2018 08:03:22 +0000 on http://31stbrklyn.com
+0000.012 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.13.4 WP: 4.8.6 PHP: 5.4.45 (cgi-fcgi, Linux mocha3019.mochahost.com 3.10.0-714.10.2.lve1.4.79.el6h.x86_64 #1 SMP Thu Jan 4 14:26:00 EST 2018 x86_64) MySQL: 5.6.24 WPLANG: en_US Server: Apache/2.2.24 (Unix) mod_ssl/2.2.24 OpenSSL/1.0.0-fips DAV/2 Phusion_Passenger/4.0.58 mod_bwlimited/1.4 mod_jk/1.2.35 mod_fcgid/2.3.6 mod_perl/2.0.6 Perl/v5.10.1 safe_mode: 0 max_execution_time: 900 memory_limit: 128M (used: 30.8M | 31.3M) multisite: N openssl: OpenSSL 1.0.1e-fips 11 Feb 2013 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.398 (0) Free space on disk containing Updraft's temporary directory: 13537.7 MB
+0000.417 (0) Tasks: Backup files: 1 (schedule: weekly) Backup DB:  (schedule: weekly)
+0000.433 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.481 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1525680273, seconds_ago=604730)
+0000.489 (0) Set semaphore last lock (fd) time to 2018-05-14 08:03:23
+0000.491 (0) Semaphore lock (fd) complete
+0000.522 (0) Backup run: resumption=0, nonce=2c60a751430c, begun at=1526285002 (1s ago), job type=backup
+0000.527 (0) Scheduling a resumption (1) after 300 seconds (1526285303) in case this run gets aborted
+0000.634 (0) Checking if we have a zip executable available
+0000.638 (0) Testing: /usr/bin/zip
+0000.660 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.667 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.671 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.683 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.695 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.746 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.758 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.906 (0) Working binary zip found: /usr/bin/zip
+0000.919 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.925 (0) Creation of backups of directories: beginning
+0000.941 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0002.281 (0) Total entities for the zip file: 328 directories, 2362 files (0 skipped as non-modified), 43.6 MB
+0002.291 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0002.298 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0002.310 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0002.315 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0002.325 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0002.327 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (13.3 MB, 2362 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0008.436 (0) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: size is now: 4.40 MB
+0008.460 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 600 files added (on-disk size: 4516.2 KB)
+0008.481 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 700 files added (on-disk size: 4516.2 KB)
+0008.487 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 800 files added (on-disk size: 4516.2 KB)
+0008.504 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 900 files added (on-disk size: 4516.2 KB)
+0008.527 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 1000 files added (on-disk size: 4516.2 KB)
+0008.531 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (6.7 MB, 2362 files batched, 501 (1002) added so far); re-opening (prior size: 4516.2 KB)
+0012.564 (0) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: size is now: 7.00 MB
+0012.575 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 1100 files added (on-disk size: 7120.1 KB)
+0012.581 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 1200 files added (on-disk size: 7120.1 KB)
+0012.592 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 1300 files added (on-disk size: 7120.1 KB)
+0012.597 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 1400 files added (on-disk size: 7120.1 KB)
+0012.605 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 1500 files added (on-disk size: 7120.1 KB)
+0012.608 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (17.1 MB, 2362 files batched, 501 (1503) added so far); re-opening (prior size: 7120.1 KB)
+0023.064 (0) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: size is now: 13.10 MB
+0023.075 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 1600 files added (on-disk size: 13382.5 KB)
+0023.087 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 1700 files added (on-disk size: 13382.5 KB)
+0023.101 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 1800 files added (on-disk size: 13382.5 KB)
+0023.107 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 1900 files added (on-disk size: 13382.5 KB)
+0023.114 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 2000 files added (on-disk size: 13382.5 KB)
+0023.116 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2.1 MB, 2362 files batched, 501 (2004) added so far); re-opening (prior size: 13382.5 KB)
+0025.199 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 2100 files added (on-disk size: 14132.7 KB)
+0025.214 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 2200 files added (on-disk size: 14132.7 KB)
+0025.219 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip.tmp: 2300 files added (on-disk size: 14132.7 KB)
+0028.685 (0) Created plugins zip (0) - 15383.4 KB in 27.4 s (562.2 KB/s) (sha1: 2b84da8ee68d7de85475159b69624ecba9d54b28, sha256: 1bec9f692220e5728d41063355642e952886cc9df882a53847fc614324726ce8)
+0028.695 (0) Beginning creation of dump of themes (split every: 400 MB)
+0029.086 (0) Total entities for the zip file: 16 directories, 112 files (0 skipped as non-modified), 1.5 MB
+0029.111 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0030.340 (0) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-themes.zip.tmp: size is now: 1.00 MB
+0030.417 (0) Created themes zip (0) - 1035.7 KB in 1.4 s (734.6 KB/s) (sha1: 0af0058f1b4c4c81a347bf45daf5ee8a6cc435b0, sha256: 546bf6a9d36f857a585586261f0efe73ee0d2d6ad6c855f9f6e0fb932fed1982)
+0030.427 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0030.430 (0) Looking for candidates to back up in: /home5/brklyn31/public_html/wp-content/uploads
+0030.434 (0) finding files: 2018: adding to list (1)
+0030.437 (0) finding files: AAPL: adding to list (2)
+0030.451 (0) finding files: 2015: adding to list (3)
+0030.454 (0) finding files: 2017: adding to list (4)
+0030.456 (0) finding files: 2016: adding to list (5)
+0030.466 (0) finding files: wpcf7_uploads: adding to list (6)
+0030.469 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0031.079 (0) Total entities for the zip file: 32 directories, 321 files (0 skipped as non-modified), 62.5 MB
+0031.092 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25.4 MB, 321 files batched, 90 (90) added so far); re-opening (prior size: 0 KB)
+0044.276 (0) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-uploads.zip.tmp: size is now: 25.40 MB
+0044.284 (0) A useful amount of data was added after this amount of zip processing: 13.9 s (normalised: 13.7 s, rate: 1863.8 KB/s)
+0044.353 (0) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-uploads.zip.tmp: 100 files added (on-disk size: 26010.9 KB)
+0044.363 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (32.4 MB, 321 files batched, 99 (189) added so far); re-opening (prior size: 26010.9 KB)
+1869.111 (1) Opened log file at time: Mon, 14 May 2018 08:34:31 +0000 on http://31stbrklyn.com
+1869.114 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.13.4 WP: 4.8.6 PHP: 5.4.45 (cgi-fcgi, Linux mocha3019.mochahost.com 3.10.0-714.10.2.lve1.4.79.el6h.x86_64 #1 SMP Thu Jan 4 14:26:00 EST 2018 x86_64) MySQL: 5.6.24 WPLANG: en_US Server: Apache/2.2.24 (Unix) mod_ssl/2.2.24 OpenSSL/1.0.0-fips DAV/2 Phusion_Passenger/4.0.58 mod_bwlimited/1.4 mod_jk/1.2.35 mod_fcgid/2.3.6 mod_perl/2.0.6 Perl/v5.10.1 safe_mode: 0 max_execution_time: 900 memory_limit: 128M (used: 31.1M | 31.5M) multisite: N openssl: OpenSSL 1.0.1e-fips 11 Feb 2013 mcrypt: Y LANG:  ZipArchive::addFile: Y
+1869.368 (1) Free space on disk containing Updraft's temporary directory: 13445.2 MB
+1869.375 (1) Backup run: resumption=1, nonce=2c60a751430c, begun at=1526285002 (1870s ago), job type=backup, previous check-in=58.1s
+1869.377 (1) Long time past since expected resumption time: approx expected=1526285361.3, now=1526286871.8, diff=1510.5
+1869.382 (1) [Warning] Your website is visited infrequently and UpdraftPlus is not getting the resources it hoped for; please read this page: https://updraftplus.com/faqs/why-am-i-getting-warnings-about-my-site-not-having-enough-visitors/
+1869.388 (1) Scheduling a resumption (2) after 300 seconds (1526287172) in case this run gets aborted
+1869.420 (1) Checking if we have a zip executable available
+1869.425 (1) Zip engine: found/will use a binary zip: /usr/bin/zip
+1869.427 (1) Creation of backups of directories: had begun; will resume
+1869.432 (1) Beginning creation of dump of plugins (split every: 400 MB)
+1869.435 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip: this file has already been created (age: 1842 s)
+1869.439 (1) Beginning creation of dump of themes (split every: 400 MB)
+1869.441 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-themes.zip: this file has already been created (age: 1840 s)
+1869.448 (1) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+1869.449 (1) Looking for candidates to back up in: /home5/brklyn31/public_html/wp-content/uploads
+1869.451 (1) finding files: 2018: adding to list (1)
+1869.452 (1) finding files: AAPL: adding to list (2)
+1869.453 (1) finding files: 2015: adding to list (3)
+1869.459 (1) finding files: 2017: adding to list (4)
+1869.461 (1) finding files: 2016: adding to list (5)
+1869.463 (1) finding files: wpcf7_uploads: adding to list (6)
+1869.465 (1) Beginning creation of dump of uploads (split every: 400 MB)
+1869.468 (1) File exists (/home5/brklyn31/public_html/wp-content/updraft/backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-uploads.zip.tmp), but was apparently not modified within the last 30 seconds, so we assume that any previous run has now terminated (time_mod=1526285062, time_now=1526286872, diff=1810)
+1869.804 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-uploads.zip.tmp: Zip file already exists, with 189 files
+1869.855 (1) Total entities for the zip file: 32 directories, 321 files (0 skipped as non-modified), 62.5 MB
+1869.860 (1) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-uploads.zip.tmp: 100 files added (on-disk size: 59242.8 KB)
+1869.864 (1) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-uploads.zip.tmp: 200 files added (on-disk size: 59242.8 KB)
+1869.872 (1) Zip: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-uploads.zip.tmp: 300 files added (on-disk size: 59242.8 KB)
+1884.117 (1) Created uploads zip (0) - 64061 KB in 14.4 s (4436.2 KB/s) (sha1: aab9ce389f8fb6bf2fd598d97e3a28a596c8aad7, sha256: 904f0735f85f45bfc0556a30db0a729c6c30cddd8673760630f09615028a06ca)
+1884.121 (1) Beginning backup of other directories found in the content directory (index: 0)
+1884.122 (1) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+1884.123 (1) Looking for candidates to back up in: /home5/brklyn31/public_html/wp-content
+1884.124 (1) finding files: uploads: skipping: this is the uploads directory
+1884.125 (1) finding files: advanced-cache.php: adding to list (1)
+1884.126 (1) finding files: index.php: adding to list (2)
+1884.128 (1) finding files: wp-cache-config.php: adding to list (3)
+1884.129 (1) finding files: files: adding to list (4)
+1884.135 (1) finding files: church_uploads: adding to list (5)
+1884.174 (1) finding files: updraft: skipping: this is the updraft directory
+1884.185 (1) finding files: themes: skipping: this is the themes directory
+1884.189 (1) finding files: plugins: skipping: this is the plugins directory
+1884.191 (1) finding files: upgrade: skipping: excluded by options
+1884.193 (1) finding files: cache: skipping: excluded by options
+1884.548 (1) Total entities for the zip file: 17 directories, 86 files (0 skipped as non-modified), 3.3 MB
+1886.195 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-others.zip.tmp: size is now: 2.60 MB
+1886.362 (1) Created others zip (0) - 2635.4 KB in 1.9 s (1399.6 KB/s) (sha1: f5c37dc08a94dde2d437b44aea93f29d6a604e3a, sha256: 97b04e6f91d41826004c86d35e832ead83634b0b0c3be3c1a9f0388abadad0d3)
+1886.383 (1) Saving backup status to database (elements: 8)
+1886.407 (1) Resuming creation of database dump (WordPress DB)
+1886.415 (1) Testing: /usr/bin/mysqldump
+1886.610 (1) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wptestsite_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 (truncated - 1224 bytes total)
+1886.626 (1) Working binary mysqldump found: /usr/bin/mysqldump
+1886.718 (1) Table wptestsite_options: Total expected rows (approximate): 392
+1886.807 (1) Table wptestsite_options: Total rows added: 414 in 0.09 seconds
+1886.810 (1) Table wptestsite_options: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_options.table.gz - 75 KB)
+1886.864 (1) Table wptestsite_users: Total expected rows (approximate): 2
+1886.872 (1) Table wptestsite_users: Total rows added: 2 in 0.00 seconds
+1886.876 (1) Table wptestsite_users: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_users.table.gz - 0.7 KB)
+1886.903 (1) Table wptestsite_usermeta: Total expected rows (approximate): 63
+1886.912 (1) Table wptestsite_usermeta: Total rows added: 75 in 0.01 seconds
+1886.915 (1) Table wptestsite_usermeta: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_usermeta.table.gz - 2.8 KB)
+1886.925 (1) Table wptestsite_commentmeta: Total expected rows (approximate): 3
+1886.938 (1) Table wptestsite_commentmeta: Total rows added: 3 in 0.01 seconds
+1886.940 (1) Table wptestsite_commentmeta: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_commentmeta.table.gz - 0.5 KB)
+1886.954 (1) Table wptestsite_comments: Total expected rows (approximate): 0
+1886.963 (1) Table wptestsite_comments: Total rows added: 1 in 0.01 seconds
+1886.966 (1) Table wptestsite_comments: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_comments.table.gz - 0.8 KB)
+1886.985 (1) Table wptestsite_links: Total expected rows (approximate): 0
+1886.994 (1) Table wptestsite_links: Total rows added: 0 in 0.01 seconds
+1886.999 (1) Table wptestsite_links: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_links.table.gz - 0.4 KB)
+1887.023 (1) Table wptestsite_postmeta: Total expected rows (approximate): 1102
+1887.092 (1) Table wptestsite_postmeta: Total rows added: 1166 in 0.07 seconds
+1887.097 (1) Table wptestsite_postmeta: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_postmeta.table.gz - 18.8 KB)
+1887.114 (1) Table wptestsite_posts: Total expected rows (approximate): 241
+1887.190 (1) Table wptestsite_posts: Total rows added: 242 in 0.07 seconds
+1887.193 (1) Table wptestsite_posts: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_posts.table.gz - 19.8 KB)
+1887.215 (1) Table wptestsite_term_relationships: Total expected rows (approximate): 115
+1887.235 (1) Table wptestsite_term_relationships: Total rows added: 115 in 0.02 seconds
+1887.237 (1) Table wptestsite_term_relationships: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_term_relationships.table.gz - 0.6 KB)
+1887.263 (1) Table wptestsite_term_taxonomy: Total expected rows (approximate): 85
+1887.279 (1) Table wptestsite_term_taxonomy: Total rows added: 88 in 0.01 seconds
+1887.282 (1) Table wptestsite_term_taxonomy: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_term_taxonomy.table.gz - 1 KB)
+1887.309 (1) Table wptestsite_termmeta: Total expected rows (approximate): 0
+1887.331 (1) Table wptestsite_termmeta: Total rows added: 0 in 0.02 seconds
+1887.334 (1) Table wptestsite_termmeta: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_termmeta.table.gz - 0.4 KB)
+1887.383 (1) Table wptestsite_terms: Total expected rows (approximate): 85
+1887.396 (1) Table wptestsite_terms: Total rows added: 88 in 0.01 seconds
+1887.399 (1) Table wptestsite_terms: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_terms.table.gz - 1.7 KB)
+1887.428 (1) Table wptestsite_spidercalendar_calendar: Total expected rows (approximate): 0
+1887.433 (1) Table wptestsite_spidercalendar_calendar: Total rows added: 0 in 0.00 seconds
+1887.440 (1) Table wptestsite_spidercalendar_calendar: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_spidercalendar_calendar.table.gz - 0.4 KB)
+1887.493 (1) Table wptestsite_spidercalendar_event: Total expected rows (approximate): 0
+1887.501 (1) Table wptestsite_spidercalendar_event: Total rows added: 0 in 0.01 seconds
+1887.510 (1) Table wptestsite_spidercalendar_event: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_spidercalendar_event.table.gz - 0.4 KB)
+1887.555 (1) Table wptestsite_spidercalendar_event_category: Total expected rows (approximate): 0
+1887.568 (1) Table wptestsite_spidercalendar_event_category: Total rows added: 0 in 0.01 seconds
+1887.570 (1) Table wptestsite_spidercalendar_event_category: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_spidercalendar_event_category.table.gz - 0.3 KB)
+1887.628 (1) Table wptestsite_spidercalendar_theme: Total expected rows (approximate): 1
+1887.676 (1) Table wptestsite_spidercalendar_theme: Total rows added: 1 in 0.02 seconds
+1887.680 (1) Table wptestsite_spidercalendar_theme: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_spidercalendar_theme.table.gz - 1 KB)
+1887.731 (1) Table wptestsite_spidercalendar_widget_theme: Total expected rows (approximate): 1
+1887.744 (1) Table wptestsite_spidercalendar_widget_theme: Total rows added: 1 in 0.01 seconds
+1887.746 (1) Table wptestsite_spidercalendar_widget_theme: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_spidercalendar_widget_theme.table.gz - 0.7 KB)
+1887.777 (1) Table wptestsite_totalsoft_cal_1: Total expected rows (approximate): 4
+1887.789 (1) Table wptestsite_totalsoft_cal_1: Total rows added: 4 in 0.01 seconds
+1887.792 (1) Table wptestsite_totalsoft_cal_1: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_totalsoft_cal_1.table.gz - 0.7 KB)
+1887.835 (1) Table wptestsite_totalsoft_cal_2: Total expected rows (approximate): 2
+1887.860 (1) Table wptestsite_totalsoft_cal_2: Total rows added: 2 in 0.02 seconds
+1887.864 (1) Table wptestsite_totalsoft_cal_2: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_totalsoft_cal_2.table.gz - 0.7 KB)
+1887.897 (1) Table wptestsite_totalsoft_cal_events: Total expected rows (approximate): 0
+1887.911 (1) Table wptestsite_totalsoft_cal_events: Total rows added: 0 in 0.01 seconds
+1887.914 (1) Table wptestsite_totalsoft_cal_events: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_totalsoft_cal_events.table.gz - 0.3 KB)
+1887.951 (1) Table wptestsite_totalsoft_cal_events_p2: Total expected rows (approximate): 0
+1887.971 (1) Table wptestsite_totalsoft_cal_events_p2: Total rows added: 0 in 0.01 seconds
+1887.974 (1) Table wptestsite_totalsoft_cal_events_p2: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_totalsoft_cal_events_p2.table.gz - 0.3 KB)
+1888.009 (1) Table wptestsite_totalsoft_cal_ids: Total expected rows (approximate): 6
+1888.019 (1) Table wptestsite_totalsoft_cal_ids: Total rows added: 6 in 0.01 seconds
+1888.028 (1) Table wptestsite_totalsoft_cal_ids: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_totalsoft_cal_ids.table.gz - 0.3 KB)
+1888.059 (1) Table wptestsite_totalsoft_cal_types: Total expected rows (approximate): 6
+1888.078 (1) Table wptestsite_totalsoft_cal_types: Total rows added: 6 in 0.02 seconds
+1888.081 (1) Table wptestsite_totalsoft_cal_types: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_totalsoft_cal_types.table.gz - 0.4 KB)
+1888.117 (1) Table wptestsite_totalsoft_fonts: Total expected rows (approximate): 125
+1888.135 (1) Table wptestsite_totalsoft_fonts: Total rows added: 125 in 0.01 seconds
+1888.139 (1) Table wptestsite_totalsoft_fonts: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_totalsoft_fonts.table.gz - 1.4 KB)
+1888.163 (1) Table wptestsite_wp_rp_tags: Total expected rows (approximate): 70
+1888.182 (1) Table wptestsite_wp_rp_tags: Total rows added: 70 in 0.01 seconds
+1888.185 (1) Table wptestsite_wp_rp_tags: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_wp_rp_tags.table.gz - 0.8 KB)
+1888.218 (1) Table wptestsite_yoast_seo_links: Total expected rows (approximate): 6
+1888.227 (1) Table wptestsite_yoast_seo_links: Total rows added: 6 in 0.01 seconds
+1888.230 (1) Table wptestsite_yoast_seo_links: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_yoast_seo_links.table.gz - 0.5 KB)
+1888.275 (1) Table wptestsite_yoast_seo_meta: Total expected rows (approximate): 24
+1888.284 (1) Table wptestsite_yoast_seo_meta: Total rows added: 24 in 0.01 seconds
+1888.288 (1) Table wptestsite_yoast_seo_meta: finishing file (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_yoast_seo_meta.table.gz - 0.4 KB)
+1888.296 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_options.table.gz (1/27): adding to final database dump
+1888.338 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_users.table.gz (2/27): adding to final database dump
+1888.341 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_usermeta.table.gz (3/27): adding to final database dump
+1888.345 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_commentmeta.table.gz (4/27): adding to final database dump
+1888.348 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_comments.table.gz (5/27): adding to final database dump
+1888.351 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_links.table.gz (6/27): adding to final database dump
+1888.355 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_postmeta.table.gz (7/27): adding to final database dump
+1888.380 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_posts.table.gz (8/27): adding to final database dump
+1888.397 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_term_relationships.table.gz (9/27): adding to final database dump
+1888.401 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_term_taxonomy.table.gz (10/27): adding to final database dump
+1888.405 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_termmeta.table.gz (11/27): adding to final database dump
+1888.408 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_terms.table.gz (12/27): adding to final database dump
+1888.412 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_spidercalendar_calendar.table.gz (13/27): adding to final database dump
+1888.415 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_spidercalendar_event.table.gz (14/27): adding to final database dump
+1888.418 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_spidercalendar_event_category.table.gz (15/27): adding to final database dump
+1888.421 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_spidercalendar_theme.table.gz (16/27): adding to final database dump
+1888.424 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_spidercalendar_widget_theme.table.gz (17/27): adding to final database dump
+1888.427 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_totalsoft_cal_1.table.gz (18/27): adding to final database dump
+1888.433 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_totalsoft_cal_2.table.gz (19/27): adding to final database dump
+1888.436 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_totalsoft_cal_events.table.gz (20/27): adding to final database dump
+1888.439 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_totalsoft_cal_events_p2.table.gz (21/27): adding to final database dump
+1888.441 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_totalsoft_cal_ids.table.gz (22/27): adding to final database dump
+1888.443 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_totalsoft_cal_types.table.gz (23/27): adding to final database dump
+1888.445 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_totalsoft_fonts.table.gz (24/27): adding to final database dump
+1888.449 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_wp_rp_tags.table.gz (25/27): adding to final database dump
+1888.452 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_yoast_seo_links.table.gz (26/27): adding to final database dump
+1888.455 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db-table-wptestsite_yoast_seo_meta.table.gz (27/27): adding to final database dump
+1888.457 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db.gz: finished writing out complete database file (96 KB)
+1888.473 (1) Total database tables backed up: 27 (backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db.gz, size: 127733, sha256)
+1888.491 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+1888.493 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+1888.495 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+1888.496 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-others.zip: others: This file has not yet been successfully uploaded: will queue
+1888.498 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db.gz: db: This file has not yet been successfully uploaded: will queue
+1888.499 (1) Saving backup history. Total backup size: 81.3 MB
+1888.506 (1) Requesting upload of the files that have not yet been successfully uploaded (5)
+1888.514 (1) Cloud backup selection (1/1): googledrive (last)
+1888.516 (1) Beginning dispatch of backup to remote (googledrive)
+1888.545 (1) Google Drive: requesting access token: client_id=541359925088-h4os4cf0vtsnttmalver9bidhttducen.apps.googleusercontent.com
+1888.764 (1) Google Drive: successfully obtained access token
+1890.116 (1) Google Drive quota usage: used=293.2 MB, total=15360 MB, available=15066.8 MB
+1890.120 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip: Attempting to upload to Google Drive (into folder id: 0B7h8hnHY4EHoeVVlZVRsMGJqanc)
+1890.713 (1) Googledrive chunked upload: 6.7 % uploaded (1048576)
+1890.967 (1) Googledrive chunked upload: 13.3 % uploaded (2097152)
+1891.215 (1) Googledrive chunked upload: 20 % uploaded (3145728)
+1891.484 (1) Googledrive chunked upload: 26.6 % uploaded (4194304)
+1891.768 (1) Googledrive chunked upload: 33.3 % uploaded (5242880)
+1892.097 (1) Googledrive chunked upload: 39.9 % uploaded (6291456)
+1892.490 (1) Googledrive chunked upload: 46.6 % uploaded (7340032)
+1892.907 (1) Googledrive chunked upload: 53.3 % uploaded (8388608)
+1893.349 (1) Googledrive chunked upload: 59.9 % uploaded (9437184)
+1893.837 (1) Googledrive chunked upload: 66.6 % uploaded (10485760)
+1894.188 (1) Googledrive chunked upload: 73.2 % uploaded (11534336)
+1894.557 (1) Googledrive chunked upload: 79.9 % uploaded (12582912)
+1894.930 (1) Googledrive chunked upload: 86.5 % uploaded (13631488)
+1895.322 (1) Googledrive chunked upload: 93.2 % uploaded (14680064)
+1895.741 (1) Googledrive chunked upload: 99.8 % uploaded (15728640)
+1896.804 (1) Googledrive chunked upload: 100 % uploaded (15728640)
+1896.852 (1) OK: Archive backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip uploaded to Google Drive in 6.73 seconds
+1896.884 (1) Recording as successfully uploaded: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip (400d544c6fcbdd1be8031d10d1ee774c)
+1896.936 (1) Deleting local file: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-plugins.zip: OK
+1897.216 (1) Google Drive quota usage: used=308.2 MB, total=15360 MB, available=15051.8 MB
+1897.222 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-themes.zip: Attempting to upload to Google Drive (into folder id: 0B7h8hnHY4EHoeVVlZVRsMGJqanc)
+1897.904 (1) Googledrive chunked upload: 98.9 % uploaded (1048576)
+1898.587 (1) Googledrive chunked upload: 100 % uploaded (1048576)
+1898.596 (1) OK: Archive backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-themes.zip uploaded to Google Drive in 1.37 seconds
+1898.605 (1) Recording as successfully uploaded: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-themes.zip (b9d09b9a6fa91920b4d291922a265dd5)
+1898.631 (1) Deleting local file: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-themes.zip: OK
+1899.199 (1) Google Drive quota usage: used=309.2 MB, total=15360 MB, available=15050.8 MB
+1899.204 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-uploads.zip: Attempting to upload to Google Drive (into folder id: 0B7h8hnHY4EHoeVVlZVRsMGJqanc)
+1900.558 (1) Googledrive chunked upload: 1.6 % uploaded (1048576)
+1901.105 (1) Googledrive chunked upload: 3.2 % uploaded (2097152)
+1901.569 (1) Googledrive chunked upload: 4.8 % uploaded (3145728)
+1902.042 (1) Googledrive chunked upload: 6.4 % uploaded (4194304)
+1902.459 (1) Googledrive chunked upload: 8 % uploaded (5242880)
+1902.864 (1) Googledrive chunked upload: 9.6 % uploaded (6291456)
+1903.234 (1) Googledrive chunked upload: 11.2 % uploaded (7340032)
+1903.739 (1) Googledrive chunked upload: 12.8 % uploaded (8388608)
+1904.174 (1) Googledrive chunked upload: 14.4 % uploaded (9437184)
+1904.601 (1) Googledrive chunked upload: 16 % uploaded (10485760)
+1905.033 (1) Googledrive chunked upload: 17.6 % uploaded (11534336)
+1905.448 (1) Googledrive chunked upload: 19.2 % uploaded (12582912)
+1905.859 (1) Googledrive chunked upload: 20.8 % uploaded (13631488)
+1906.312 (1) Googledrive chunked upload: 22.4 % uploaded (14680064)
+1906.712 (1) Googledrive chunked upload: 24 % uploaded (15728640)
+1907.269 (1) Googledrive chunked upload: 25.6 % uploaded (16777216)
+1907.639 (1) Googledrive chunked upload: 27.2 % uploaded (17825792)
+1908.027 (1) Googledrive chunked upload: 28.8 % uploaded (18874368)
+1908.420 (1) Googledrive chunked upload: 30.4 % uploaded (19922944)
+1908.787 (1) Googledrive chunked upload: 32 % uploaded (20971520)
+1909.171 (1) Googledrive chunked upload: 33.6 % uploaded (22020096)
+1909.549 (1) Googledrive chunked upload: 35.2 % uploaded (23068672)
+1909.964 (1) Googledrive chunked upload: 36.8 % uploaded (24117248)
+1910.360 (1) Googledrive chunked upload: 38.4 % uploaded (25165824)
+1910.761 (1) Googledrive chunked upload: 40 % uploaded (26214400)
+1911.132 (1) Googledrive chunked upload: 41.6 % uploaded (27262976)
+1911.499 (1) Googledrive chunked upload: 43.2 % uploaded (28311552)
+1911.886 (1) Googledrive chunked upload: 44.8 % uploaded (29360128)
+1912.248 (1) Googledrive chunked upload: 46.4 % uploaded (30408704)
+1912.646 (1) Googledrive chunked upload: 48 % uploaded (31457280)
+1912.981 (1) Googledrive chunked upload: 49.6 % uploaded (32505856)
+1913.342 (1) Googledrive chunked upload: 51.2 % uploaded (33554432)
+1913.950 (1) Googledrive chunked upload: 52.7 % uploaded (34603008)
+1914.444 (1) Googledrive chunked upload: 54.3 % uploaded (35651584)
+1914.875 (1) Googledrive chunked upload: 55.9 % uploaded (36700160)
+1915.319 (1) Googledrive chunked upload: 57.5 % uploaded (37748736)
+1915.773 (1) Googledrive chunked upload: 59.1 % uploaded (38797312)
+1916.226 (1) Googledrive chunked upload: 60.7 % uploaded (39845888)
+1916.636 (1) Googledrive chunked upload: 62.3 % uploaded (40894464)
+1917.023 (1) Googledrive chunked upload: 63.9 % uploaded (41943040)
+1917.466 (1) Googledrive chunked upload: 65.5 % uploaded (42991616)
+1917.868 (1) Googledrive chunked upload: 67.1 % uploaded (44040192)
+1918.272 (1) Googledrive chunked upload: 68.7 % uploaded (45088768)
+1918.651 (1) Googledrive chunked upload: 70.3 % uploaded (46137344)
+1919.044 (1) Googledrive chunked upload: 71.9 % uploaded (47185920)
+1919.465 (1) Googledrive chunked upload: 73.5 % uploaded (48234496)
+1919.858 (1) Googledrive chunked upload: 75.1 % uploaded (49283072)
+1920.203 (1) Googledrive chunked upload: 76.7 % uploaded (50331648)
+1920.573 (1) Googledrive chunked upload: 78.3 % uploaded (51380224)
+1920.909 (1) Googledrive chunked upload: 79.9 % uploaded (52428800)
+1921.243 (1) Googledrive chunked upload: 81.5 % uploaded (53477376)
+1921.608 (1) Googledrive chunked upload: 83.1 % uploaded (54525952)
+1921.989 (1) Googledrive chunked upload: 84.7 % uploaded (55574528)
+1922.387 (1) Googledrive chunked upload: 86.3 % uploaded (56623104)
+1922.806 (1) Googledrive chunked upload: 87.9 % uploaded (57671680)
+1923.192 (1) Googledrive chunked upload: 89.5 % uploaded (58720256)
+1923.602 (1) Googledrive chunked upload: 91.1 % uploaded (59768832)
+1923.983 (1) Googledrive chunked upload: 92.7 % uploaded (60817408)
+1924.389 (1) Googledrive chunked upload: 94.3 % uploaded (61865984)
+1924.748 (1) Googledrive chunked upload: 95.9 % uploaded (62914560)
+1925.162 (1) Googledrive chunked upload: 97.5 % uploaded (63963136)
+1925.592 (1) Googledrive chunked upload: 99.1 % uploaded (65011712)
+1926.629 (1) Googledrive chunked upload: 100 % uploaded (65011712)
+1926.678 (1) OK: Archive backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-uploads.zip uploaded to Google Drive in 27.47 seconds
+1926.704 (1) Recording as successfully uploaded: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-uploads.zip (b599e2acda1282c14261c324e74e65e5)
+1926.805 (1) Deleting local file: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-uploads.zip: OK
+1927.122 (1) Google Drive quota usage: used=371.8 MB, total=15360 MB, available=14988.2 MB
+1927.126 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-others.zip: Attempting to upload to Google Drive (into folder id: 0B7h8hnHY4EHoeVVlZVRsMGJqanc)
+1927.669 (1) Googledrive chunked upload: 38.9 % uploaded (1048576)
+1928.043 (1) Googledrive chunked upload: 77.7 % uploaded (2097152)
+1928.943 (1) Googledrive chunked upload: 100 % uploaded (2097152)
+1928.971 (1) OK: Archive backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-others.zip uploaded to Google Drive in 1.84 seconds
+1928.976 (1) Recording as successfully uploaded: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-others.zip (5bca9037bac20a73b0bda07758b45fc5)
+1928.989 (1) Deleting local file: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-others.zip: OK
+1929.194 (1) Google Drive quota usage: used=371.8 MB, total=15360 MB, available=14988.2 MB
+1929.207 (1) backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db.gz: Attempting to upload to Google Drive (into folder id: 0B7h8hnHY4EHoeVVlZVRsMGJqanc)
+1930.331 (1) Googledrive chunked upload: 100 % uploaded
+1930.358 (1) OK: Archive backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db.gz uploaded to Google Drive in 1.15 seconds
+1930.366 (1) Recording as successfully uploaded: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db.gz (8c772631b79a9f2fcd090b3094662e23)
+1930.387 (1) Deleting local file: backup_2018-05-14-0803_31st_amp_BRKLYN_2c60a751430c-db.gz: OK
+1930.397 (1) Retain: beginning examination of existing backup sets; user setting: retain_files=3, retain_db=3
+1930.402 (1) Number of backup sets in history: 4; groups (db): 1
+1930.406 (1) Examining (for databases) backup set with group_id=0, nonce=2c60a751430c, datestamp=1526285002 (May 14 2018 08:03:22)
+1930.409 (1) This backup set is the backup set just made, so will not be deleted.
+1930.414 (1) Examining (for databases) backup set with group_id=0, nonce=dc64e4838e67, datestamp=1525680273 (May 07 2018 08:04:33)
+1930.417 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+1930.420 (1) Examining (for databases) backup set with group_id=0, nonce=c276dede4397, datestamp=1525074791 (Apr 30 2018 07:53:11)
+1930.423 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+1930.425 (1) Examining (for databases) backup set with group_id=0, nonce=41ef6d7b33de, datestamp=1524470585 (Apr 23 2018 08:03:05)
+1930.427 (1) 1524470585: db: this set includes a database (backup_2018-04-23-0803_31st_amp_BRKLYN_41ef6d7b33de-db.gz); db count is now 3
+1930.429 (1) 1524470585: db: over retain limit (3); will delete this database
+1930.432 (1) Delete file: backup_2018-04-23-0803_31st_amp_BRKLYN_41ef6d7b33de-db.gz, service=googledrive
+1931.317 (1) backup_2018-04-23-0803_31st_amp_BRKLYN_41ef6d7b33de-db.gz: Deletion successful
+1931.334 (1) This backup set remains non-empty (f=1/d=0); will retain in history
+1931.337 (1) Number of backup sets in history: 4; groups (files): 1
+1931.340 (1) Examining (for files) backup set with nonce=2c60a751430c, datestamp=1526285002 (May 14 2018 08:03:22)
+1931.348 (1) This backup set is the backup set just made, so will not be deleted.
+1931.352 (1) This backup set is the backup set just made, so will not be deleted.
+1931.353 (1) This backup set is the backup set just made, so will not be deleted.
+1931.353 (1) This backup set is the backup set just made, so will not be deleted.
+1931.353 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+1931.356 (1) Examining (for files) backup set with nonce=dc64e4838e67, datestamp=1525680273 (May 07 2018 08:04:33)
+1931.359 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+1931.362 (1) Examining (for files) backup set with nonce=c276dede4397, datestamp=1525074791 (Apr 30 2018 07:53:11)
+1931.367 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+1931.371 (1) Examining (for files) backup set with nonce=41ef6d7b33de, datestamp=1524470585 (Apr 23 2018 08:03:05)
+1931.375 (1) plugins: over retain limit (3); will delete this file entity
+1931.379 (1) themes: over retain limit (3); will delete this file entity
+1931.382 (1) uploads: over retain limit (3); will delete this file entity
+1931.385 (1) others: over retain limit (3); will delete this file entity
+1931.387 (1) Delete file: backup_2018-04-23-0803_31st_amp_BRKLYN_41ef6d7b33de-plugins.zip, service=googledrive
+1931.390 (1) Delete file: backup_2018-04-23-0803_31st_amp_BRKLYN_41ef6d7b33de-themes.zip, service=googledrive
+1931.393 (1) Delete file: backup_2018-04-23-0803_31st_amp_BRKLYN_41ef6d7b33de-uploads.zip, service=googledrive
+1931.396 (1) Delete file: backup_2018-04-23-0803_31st_amp_BRKLYN_41ef6d7b33de-others.zip, service=googledrive
+1932.938 (1) backup_2018-04-23-0803_31st_amp_BRKLYN_41ef6d7b33de-others.zip: Deletion successful
+1933.820 (1) backup_2018-04-23-0803_31st_amp_BRKLYN_41ef6d7b33de-uploads.zip: Deletion successful
+1934.732 (1) backup_2018-04-23-0803_31st_amp_BRKLYN_41ef6d7b33de-themes.zip: Deletion successful
+1935.634 (1) backup_2018-04-23-0803_31st_amp_BRKLYN_41ef6d7b33de-plugins.zip: Deletion successful
+1935.642 (1) This backup set is now empty; will remove from history
+1935.647 (1) Deleting log file (log.41ef6d7b33de.txt)
+1935.653 (1) Retain: saving new backup history (sets now: 3) and finishing retain operation
+1935.675 (1) Resume backup (2c60a751430c, 1): finish run
+1935.683 (1) There were no errors in the uploads, so the 'resume' event (2) is being unscheduled
+1935.703 (1) Fetching RSS news feed
+1936.052 (1) Fetched RSS news feed; result is a: SimplePie
+1936.332 (1) Sending email ('Files and database (Full backup)') report (attachments: 1, size: 41.1 KB) to: 31stb...
+1936.777 (1) The backup apparently succeeded (with warnings) and is now complete

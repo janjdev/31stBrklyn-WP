@@ -1,0 +1,2096 @@
+.header-image {
+
+    padding: 40px;
+
+    margin-bottom: 0;
+
+}
+
+.sidebar, .nine.columns.bottom, .nine.columns.bottom div.three.columns{
+
+	margin: 0;
+
+	padding: 0;
+
+	background: transparent;
+
+}
+
+.widget, #secondary, #LeftBar{
+
+	width: 100%;
+
+	margin: 0;
+
+	padding: 0;
+
+	overflow: hidden;
+
+}
+
+.widget-area{
+
+	margin: 0;
+
+}
+
+.post.thin .featured-nav {
+
+	bottom:22px;
+
+	left:10px;
+
+}
+
+#LeftBar .widget-area #text-4 h1.widget-title{
+
+	text-align: center;
+
+	font-family: 'Open Sans', sans-serif;
+
+	font-size: 2.5rem;
+
+}
+
+input.search-field {
+
+    width: 100%;
+
+    padding: 0;
+
+}
+
+.widget_search input[type="search"]{
+
+	height: 0;
+
+}
+
+form.search-form{
+
+	position: relative;
+
+}
+
+span.fa.fa-search {
+
+    position: absolute;
+
+    top: 4px;
+
+    left: 80%;
+
+    color: #ccc;
+
+    transition: opacity 0.5s ease;
+
+}
+
+
+
+.widget_search input[type="search"]:focus + .fa.fa-search{
+
+	opacity: 0;
+
+}
+
+
+
+p.about_text {
+
+    text-align: left;
+
+    font-size: 2rem;
+
+    line-height: 3.5rem;
+
+}
+
+
+/*Projects Menu*/
+.page-template-template-programs
+li.menu-item-object-programming_projects{
+	padding: 15px 0 0 ;
+	border-bottom: 1px dotted #333;
+}
+
+
+/*Home Page features
+
+===========================================*/
+
+
+
+#featured {
+
+	position:relative;
+
+	max-width:900px;
+
+	max-height:390px;
+
+	overflow:hidden;
+
+	margin:20px auto;
+
+
+
+}
+
+
+
+.feature {
+
+
+
+	max-width:900px;
+
+	max-height:390px;
+
+	color:#fff;
+
+	font:15px/20px 'Dosis';
+
+	font-weight:normal;
+
+	text-transform:uppercase;
+
+	text-align:center;
+
+	cursor:pointer;
+
+	background-color: #000;
+
+}
+
+
+
+
+
+.post .featured-nav a:hover,.post .featured-nav li.selected a {
+
+	border:0;
+
+}
+
+
+
+.feature img {
+
+	position:absolute;
+
+	top:0px;
+
+	left:0px;
+
+	z-index:0;
+
+	max-width: 100%;
+
+	max-height: 100%;
+
+	min-height: 100%;
+
+	min-width: 100%;
+
+}
+
+#featured_img a{
+
+	text-decoration: none;
+
+}
+
+.feature h3 {
+
+	font-size:35px;
+
+	margin-top:120px;
+
+	position: relative;
+
+	z-index: 1;
+
+}
+
+
+
+.feature h3  {
+
+	color:#fff;
+
+}
+
+
+
+.feature span {
+
+	display:inline-block;
+
+	border-bottom: 1px dotted #fff;
+
+	padding:12px 0px;
+
+}
+
+
+
+.feature.over a span,.feature a:hover span {
+
+	border-bottom:3px solid #0000ff;
+
+}
+
+
+
+.feature h4,.feature h5 {
+
+	padding:0;
+
+	margin:20px 0px;
+
+	position: relative;
+
+	color: #fff;
+
+	z-index: 1;
+
+}
+
+
+
+.feature h5 {
+
+	position:absolute;
+
+	left:0px;	
+
+	width:100%;
+
+	font:15px/20px 'ProximaNovaBold';
+
+	font-weight:normal;
+
+}
+
+.bg_overlay {
+
+    position: absolute;
+
+    bottom: 0;
+
+    height: 100%;
+
+    width: 70%;
+
+    background: rgba(35, 35, 252, .9);
+
+    left: 15%;
+
+}
+
+/*Artist Page
+
+====================================================*/
+
+.container{
+
+	border-top: 1px solid #000;
+
+}
+
+.page_title h2{
+
+    border-bottom: 1px solid #3b3f3f;
+
+    font-size: 24px;
+
+    font-family: 'Open Sans', sans-serif;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+.artist {
+
+  height: 250px;
+
+  width: 55%;
+
+}
+
+img.artist_img {
+
+  max-height: 100%;
+
+  min-width: 100%;
+
+
+
+}
+
+
+
+.artist_name{
+
+	display: block;
+
+}
+
+.current-projects, .associate_artist{
+
+	position: relative;
+
+	width: 100%;
+
+	transition: all 0.25s ease-in-out;
+
+}
+
+.current-projects > a, .associate_artist a{
+
+    display: block;
+
+    font-size: 0;
+
+
+
+}
+
+.project, .artist{
+
+	position: relative;
+
+}
+
+.project, .project_details, .artist{
+
+	display: block;
+
+}
+
+.current-projects .project img.feature, img.related_img, .artist img.artist_img{
+
+	max-width: 100%;
+
+	width: 100%;
+
+	min-height: 100%;
+
+}
+
+
+
+img.feature{
+
+	width: 100%;
+
+	height: 100%;
+
+}
+
+
+
+.current-projects .project{
+
+	height: 250px;
+
+}
+
+.post, .post .project{
+
+	 overflow: hidden;
+
+  position: relative;
+
+}
+
+/*.project img{
+
+  -webkit-transition: all 1.5s linear;
+
+          transition: all 1.5s linear;
+
+  -webkit-transform: scale3d(1, 1, 1);
+
+          transform: scale3d(1, 1, 1);
+
+}
+
+.post:hover a img{
+
+  -webkit-transform: scale3d(.8, .8, .8);
+
+          transform: scale3d(.8, .8, .8);
+
+    -webkit-transition: all 1.85s ease;      
+
+    	transition: all 1.85s ease;
+
+}
+
+*/.description, .artist_name{
+
+	 position: absolute;
+
+    bottom: 0;
+
+    z-index: 10;
+
+	-webkit-transition:height 0.25s ease-in-out, visibility 0.3s, opacity 0.2s linear;
+
+	-moz-transition:height 0.25s ease-in-out, visibility 0.3s, opacity 0.2s linear;
+
+	-o-transition:height 0.25s ease-in-out, visibility 0.3s, opacity 0.2s linear;
+
+	transition:height 0.25s ease-in-out, visibility 0.3s, opacity 0.2s linear;
+
+    height: 40%;
+
+    background-color: rgba(204, 0, 1, 0.8);  
+
+	width: 100%;
+
+	visibility: visible;
+
+	opacity: 1;
+
+	margin: 0;
+
+	padding: 0;
+
+	border: none;
+
+}
+
+.artist_name{
+
+	width: 100%;
+
+	height: 40%;
+
+}
+
+.description h2, .artist_name h2, .description p{
+
+	color: #fff;
+
+	bottom: 0;
+
+	margin-bottom: 0;
+
+	position: absolute;
+
+	text-transform: uppercase;
+
+	font-family: 'Raleway', sans-serif;
+
+	font-weight: 300;
+
+}
+
+.description p, .post .description h2{
+
+	position: relative;
+
+	color: #000;
+
+    font-family: 'Open Sans';
+
+    font-weight: 600;
+
+}
+
+.post .description {
+
+ background: rgba(255, 255, 255, 0.6);
+
+}
+
+#rightaside h4 {
+
+    border-bottom: 1px solid #c9c9c9;
+
+}
+
+div#content {
+
+    border-top: 2px solid;
+
+    margin-top: 20px;
+
+    padding-top: 20px;
+
+}
+
+
+
+.excerpt {
+
+    position: absolute;
+
+    top: 0;
+
+    width: 45%;
+
+    left: 55%;
+
+    padding: 5px;
+
+    height: 250px;
+
+    overflow: hidden;
+
+}
+
+
+
+.excerpt p a, .about_excerpt{
+
+    font-size: 1.5rem;
+
+    line-height: 2.8rem;
+
+    color: #090909;
+
+    margin-bottom: 0;
+
+    overflow: hidden;
+
+    text-decoration: none;
+
+}
+
+a.more-link {
+
+	margin: 0;
+
+	padding: 0;
+
+    background: transparent;
+
+    color: #000 !important;
+
+    border: none;
+
+    box-shadow: none;
+
+}
+
+
+
+#leftaside.assoc{
+
+	border-right: 1px solid;
+
+}
+
+
+
+ul.assoc_nav, ul.about_nav, ul.about_nav li ul, ul#menu-artist, ul#menu-programs, ul#menu-program-schedule{
+
+	width: 100%;
+
+	list-style: none;
+
+	text-decoration: none;
+
+	margin: 0;
+
+	padding-top: 10px;
+
+}
+
+ul.assoc_nav li, ul.about_nav li, ul.about_nav li ul li, ul#menu-artist li, ul#menu-programs li{
+
+	padding: 15px 0 0 0px;
+
+	border-bottom: 1px dotted #333;
+
+}
+
+
+
+ul#menu-program-schedule li {
+
+    border-top: 1px solid;
+
+    border-bottom: 1px solid;
+
+    margin: 20px 0;
+
+    padding: 0;
+
+}
+
+ul.assoc_nav li a, ul.about_nav li a, ul.about_nav li ul li a, ul#menu-artist li a, ul#menu-programs li a, ul#menu-program-schedule li a{ 
+
+	color: #000;
+
+}
+
+body:after, .main:after{
+
+	content: "";
+
+	display: block;
+
+	background: url('../images/pattern_hipster_5.jpg') no-repeat top center;
+
+	background-size: cover;
+
+	opacity: 0.1;
+
+	top:0;
+
+	bottom: 0;
+
+	left: 0;
+
+	right: 0;
+
+	position: fixed;
+
+	z-index: -200;
+
+}
+
+.proj_bottom{
+
+	position: relative;	
+
+}
+
+.nine.columns.pro_details {
+
+    font-size: 2rem;
+
+    line-height: 3rem;
+
+    margin-top: 30px;
+
+}
+
+.program_details {
+
+    position: absolute;
+
+    left: 0;
+
+    border-top: 1px solid;
+
+    border-bottom: 1px solid;
+
+    top: auto;
+
+}
+
+/*About
+
+================================================ */
+
+section#about{
+
+}
+
+.headline{
+
+	margin-bottom: 5rem;
+
+  color: #303033; #b6b5b5;
+
+  border-bottom: 2vh solid rgb(205, 3, 4);
+
+  text-align: center;
+
+}
+
+.headline h3{
+
+	font-family: 'Dosis', sans-serif;
+
+	font-weight: 800;
+
+}
+
+.headline span{
+
+ color: rgb(205, 3, 4);
+
+}
+
+.headline p{
+
+	line-height: 60px;
+
+}
+
+
+
+.mission{
+
+	font-family: 'Dosis', sans-serif;
+
+	font-weight: 400;
+
+	color: #202022;#999;
+
+}
+
+.mission p{	
+
+	font-size: 24px;
+
+	line-height: 40px;	
+
+}
+
+h3.title {
+
+    text-transform: uppercase;
+
+}
+
+
+
+h3.title:first-letter {
+
+    font-size: 6rem;
+
+}
+
+
+
+.nine.columns.mission, aside.three.columns.about {
+
+    margin: 0;
+
+}
+
+h3.title {
+
+    text-transform: uppercase;
+
+    margin: 0;
+
+    text-align: center;
+
+}
+
+.about_page, .contact_page{
+
+	border: none;
+
+}
+
+.site-footer{
+
+	background: transparent;
+
+}
+
+/*Contact
+
+================================================= */
+
+#contact{
+
+	font-family: 'Open Sans', sans-serif;
+
+	font-weight: 400;
+
+	color: #000;
+
+}
+
+#contact .contactinfo .four.columns, #contact #contact_form form.form .four.columns {
+
+    width: 100%;
+
+}
+
+.contact_center{
+
+	
+
+}
+
+.contactinfo{
+
+	text-align: center;
+
+}
+
+.contactinfo h1{
+
+	font-weight: 600;
+
+	margin-bottom: 2.5rem;
+
+}
+
+.address{
+
+	margin: 20px 0 50px;
+
+}
+
+.address p:first-child{
+
+  margin: 0;
+
+}
+
+.directions p, .phone p{
+
+	display: inline-block;
+
+	margin: 0 0 0 39px;
+
+}
+
+.fa.fa-map-marker, .fa.fa-mobile-phone {
+
+	position: absolute;
+
+  	padding: 5px 15px;
+
+  	transition: margin 0.5s ease;
+
+}
+
+
+
+.directions:hover > .fa.fa-map-marker, #phone:hover > .fa.fa-mobile-phone {
+
+	margin: 0 0 0 5px;
+
+}
+
+.emails p a:hover{
+
+	color: #000;
+
+}
+
+.directions, .business p:last-child, .inquire > p:last-child, .show_form, #phone{
+
+  padding: 10px 0;		
+
+  border: 1px solid #777;
+
+  cursor: pointer;
+
+  transition: border-color 0.25s ease; 
+
+}
+
+div#phone a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+#map {
+
+	bottom: auto;
+
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+
+  height: 0;
+
+  min-height: 0;
+
+  opacity: 0;
+
+  position: absolute;
+
+  top: auto;
+
+  transform: rotate(-108deg) translateX(-100%);
+
+  width: 0;
+
+  z-index: 300;
+
+}
+
+.fa.fa-minus-square {
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 2.5rem;
+
+  position: absolute;
+
+  top: 10%;
+
+}
+
+#map_brklyn{
+
+	width: 85%;
+
+	top: 20%;
+
+	margin: 0 auto;
+
+	max-height: 500px;
+
+	height: 35%;
+
+}
+
+#map.show_map {
+
+  bottom: 0;
+
+  height: 100%;
+
+  min-height: 100%;
+
+  opacity: 1;
+
+  top: 0;
+
+  transform: rotateZ(0deg) translateX(0%);
+
+  width: 100%;
+
+  transition: transform 0.5s ease;
+
+  transition: opacity .5s ease-out;
+
+  transition: width 0.55s ease-out;
+
+}
+
+.directions:hover, .business p:last-child:hover, .inquire > p:last-child:hover, .show_form{
+
+	animation: borderColor 0.75s forwards;
+
+} 
+
+.twelve.columns.emails{
+
+	    padding-top: 3rem;
+
+	    margin-top: 3.75rem;
+
+}
+
+.business p:last-child{
+
+	margin-bottom: 5px;
+
+}
+
+.lable {
+
+  color: #999;
+
+  font-size: 1.25rem;
+
+  margin-bottom: 5px;
+
+}
+
+.twelve.columns.gif-vid{
+
+	position: relative;
+
+}
+
+ .ten.columns.shout-out{
+
+ 	position: absolute;
+
+	background: rgba(255, 255, 255, 0.8);
+
+	width: 260px;
+
+	height: 260px;
+
+	border-radius: 50%;
+
+	top: 50%;
+
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+
+	z-index: 150;
+
+}
+
+.circle-text {
+
+  left: 50%;
+
+  margin: 0 auto;
+
+  position: absolute;
+
+  text-align: center;
+
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 80%;
+
+}
+
+.contact-text{
+
+	position: relative;
+
+}
+
+.circle-text h3{
+
+	margin: 5% 0 0 0;
+
+}
+
+.circle-text p, .circle-text h4{
+
+	margin-bottom: 10px;
+
+}
+
+.show_form {
+
+	cursor: pointer;
+
+  	margin: 0 auto;
+
+  	padding: 0;
+
+  	width: 60%;
+
+}
+
+.show_form p {
+
+  display: inline-block;
+
+  margin: 0 0 0 -20%;
+
+  padding: 0;
+
+}
+
+span.fa.fa-long-arrow-right{
+
+	left: 60%;
+
+	position: absolute;
+
+	padding: 5px;
+
+	transition: margin 0.25s ease-in-out;
+
+}
+
+.show_form:hover > .fa.fa-long-arrow-right{
+
+		margin: 0 0 0 10px;
+
+}
+
+#contact_form {
+
+  background: rgba(53, 53, 54, 1) none repeat scroll 0 0;
+
+  bottom: auto;
+
+  font-size: 0;
+
+  height: 0;
+
+  position: absolute;
+
+  top: auto;
+
+  transform: skew(27deg, 36deg);
+
+  width: 0;
+
+  opacity: 0;
+
+  z-index: 300;
+
+}
+
+#contact_form.show{	
+
+  	bottom: 0;
+
+  	font-size: inherit;;
+
+  	height: auto;
+
+  	top: 0;
+
+  	transform: skew(0);
+
+  	width: 100%;
+
+  	opacity: 1;
+
+  	transition: all 0.5s ease;
+
+}
+
+span.fa.fa-times-circle-o {
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 25px;
+
+  height: 20px;
+
+  margin: 15px 0 0 90%;
+
+  text-align: center;
+
+  transform: translateX(-100%);
+
+  width: 20px;
+
+}
+
+.input__field.input__field--haruki {
+
+   background: rgba(255, 255, 255, 0.05);
+
+   border-radius: 0;
+
+  border:none;
+
+}
+
+div.input.input--haruki.four.columns {
+
+  margin-left: 0;
+
+}
+
+input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+
+    border: none;
+
+    outline: 0;
+
+}
+
+form.form.ten.columns {
+
+  float: none;
+
+  margin: 0 auto;
+
+}
+
+label.input__label.input__label--haruki {
+
+  top: -6px;
+
+}
+
+span.input__label-content.input__label-content--haruki {
+
+    margin-left: 15px;
+
+}
+
+.input--haruki {
+
+    margin: 1em 1em 1em;
+
+}
+
+.input.input--haruki.twelve.columns {
+
+    margin: 15px 0 0 0;
+
+}
+
+textarea#mesg {
+
+	 min-height: auto ;
+
+	 resize: none;
+
+}
+
+button.submission {
+
+  color: #777;
+
+  font-size: 24px;
+
+  margin-left: 90%;
+
+  transform: translateX(-100%);
+
+}
+
+p.message{
+
+	color: white;
+
+}
+
+button.submission, p.message{
+
+	margin-bottom: 0;
+
+}
+
+.holder img{
+
+	height: 440px;
+
+	min-width: 100%;
+
+  	z-index: -100;
+
+}
+
+.notify .notify-close{
+
+	width: 25px;
+
+	left: 80%;
+
+}
+
+
+
+
+
+/* Associate Artist
+
+================================================= */
+
+.content{
+
+	min-height: 100%;
+
+	height: auto;
+
+	border: none;
+
+}
+
+#associate{
+
+	width: 100%;
+
+	transition: all 0.33s ease-in-out; 
+
+}
+
+.col{
+
+	margin-left: -4px;
+
+	width: 50%;
+
+	font-size: 0;
+
+}
+
+#associate .headline{
+
+	border: none;
+
+	padding: 0;
+
+	margin: 0;
+
+	width: 100%;
+
+}
+
+.headline .associate_artist_title, .bio{
+
+	margin: 0;
+
+	padding: 0;
+
+	text-align: center;
+
+	font-family: "Open Sans", sans-serif;
+
+	font-weight: 400;
+
+}
+
+.headline .associate_artist_title{
+
+	text-align: left;
+
+	text-transform: uppercase;
+
+	font-weight: 600;
+
+}
+
+.headline p {
+
+    font-size: 1.5rem;
+
+    line-height: 2.5rem;
+
+    text-align: left;
+
+    margin: 0;
+
+    
+
+}
+
+
+
+.thumb{
+
+	height: 350px;
+
+	
+
+}
+
+img.thumbnail{
+
+	max-width: 100%;
+
+	min-height: 100%;
+
+	height: 100%;
+
+	width: 100%;
+
+}
+
+.categories{
+
+	border-bottom: 1px solid;
+
+	margin-bottom: 20px;
+
+	color: #191919;
+
+	line-height: 2.3rem;
+
+}
+
+.categories a{
+
+	text-decoration: none;
+
+	color: #191919;
+
+}
+
+.categories p{
+
+	margin: 0;
+
+}
+
+
+
+.artist_bio {
+
+    font-size: 0;
+
+    border-top: 1px dotted;
+
+    border-bottom: 1px dotted; 
+
+}
+
+.three.columns.artist_bio span {
+
+    font-size: 1.5rem;
+
+}
+
+.bio {
+
+    text-align: left;
+
+    color: #191919;
+
+    margin-left: 4%;
+
+}
+
+
+
+.bio p:nth-child(1) {
+
+	padding-bottom: 20px;
+
+	border-bottom: 2vh solid rgb(205, 3, 4);
+
+}
+
+ .col.soc{
+
+	width: 100%;
+
+	height: 150px;
+
+	clear: right;
+
+	margin: 0;
+
+}
+
+a.soc_link{
+
+	display: inline-block;;
+
+	width: 33.3333%;	
+
+	height: 150px;
+
+	background-repeat: no-repeat;
+
+	background-size: 35%;
+
+	background-position: center;	
+
+}
+
+
+
+/*Footer
+
+================================================= */
+
+footer.twelve.columns, footer a{
+
+	background: rgba(53, 53, 54, 1);
+
+	color: #ffffff;
+
+	font-family: 'Dosis', sans-serif;
+
+	font-weight: 400;
+
+}
+
+footer a:hover{
+
+	color: #fff;
+
+}
+
+
+
+footer a{
+
+	background: transparent;
+
+}
+
+
+
+hr.sep {
+
+    margin-top: 5rem;
+
+    border-top: 5px solid #3f3f3f;
+
+    margin-bottom: 0;
+
+}
+
+footer div.cont_deets{
+
+	margin-bottom: 0;
+
+	text-align: right;
+
+    padding-right: 50px;
+
+}
+
+
+
+.menu-mobile{
+
+	background: transparent;
+
+}
+
+/*===================================================================================================================*/
+
+ /*Larger than mobile */
+
+@media only screen and (min-width: 459px) {
+
+		.loader h1{
+
+			font-size: 4rem;
+
+		}
+
+		.logo{
+
+			min-height:	17.5%; 
+
+		}
+
+		.ten.columns.shout-out{
+
+			width: 300px;
+
+			height: 300px;
+
+		}
+
+		.four.columns.reach {
+
+  			float: none;
+
+  			margin: 0;
+
+  		}
+
+  		.holder img{
+
+  			margin-left: 50%;
+
+  	transform: translateX(-50%);
+
+  		}
+
+	}
+
+	@media only screen and (min-width: 600px) {
+
+		.loader h1{
+
+			font-size: 6rem;
+
+		}
+
+		.headline h3{
+
+			font-size: 50px;
+
+		}
+
+		.holder img{
+
+			height: 450px;
+
+		}
+
+		.ten.columns.shout-out{
+
+			width: 400px;
+
+			height: 400px;
+
+		}
+
+	}
+
+	@media only screen and (min-width: 768px){
+
+		.loader h1{
+
+			font-size: 7rem;
+
+		}
+
+		.logo{
+
+			min-height: 26.5%
+
+		}
+
+		.headline h3{
+
+			font-size: 50px;
+
+			line-height: 62px;
+
+		}
+
+		.mission{
+
+		margin-left: 20px;
+
+		}
+
+		.mission p{
+
+		font-size: 30px;
+
+		line-height: 50px;
+
+		}
+
+		h3.title{
+
+			font-size: 3.5rem;
+
+			line-height: 4.5rem;
+
+		}
+
+		.mission p:first-letter{
+
+			font-size: 9rem;
+
+		}
+
+		.project_details h3{
+
+			font-size: 7rem;
+
+		}
+
+		.project_details p{
+
+			font-size: 24px;
+
+		}
+
+		.headline h3.associate_artist_title{
+
+			font-size: 6rem;
+
+		}
+
+		.contactinfo h1{
+
+			margin-top: 10%;
+
+		}
+
+		.reach, .business, .inquire{
+
+			margin-bottom: 25px;
+
+		}
+
+		.reach{
+
+			margin-left: 0;
+
+		}
+
+		.circle-text p{
+
+			font-size: 2.5rem;
+
+			font-weight: 300;
+
+			line-height: 3.5rem;
+
+		}
+
+		.fa.fa-long-arrow-right{
+
+			transform: translate(0%, 50%);
+
+		}
+
+		.ten.columns.shout-out{
+
+			width: 450px;
+
+			height: 450px;
+
+		}
+
+		.holder img{
+
+			height: 500px;
+
+		}
+
+		.proj_bottom{
+
+			margin-left: 4%;
+
+		}
+
+		.program_details {
+
+			left: -42%;
+
+			bottom: 0;
+
+		}
+
+	}
+
+
+
+	@media only screen and (min-width: 850px){
+
+		header{
+
+			height: 11%;
+
+		}
+
+	}
+
+
+
+	/* All Mobile Sizes (devices and browser) */
+
+	@media only screen and (min-width: 1000px) {
+
+
+
+		.description, .artist_name{
+
+			visibility: hidden;
+
+			opacity: 0;
+
+			height: 0;
+
+		}
+
+		.project:hover + .description, .project:active + .description, .project:focus + .description, .description:hover, .artist:hover + .artist_name, .artist:active + .artist_name, .artist:focus + .artist_name, .artist_name:hover, .artist_name{
+
+			height: 40%;
+
+			visibility: visible;
+
+			opacity: 1;
+
+		}
+
+
+
+/*			.loader h1{
+
+			font-size: 9rem;
+
+		}
+
+
+
+		.logo{
+
+			margin: 75px 0;
+
+		}
+
+		.logo{
+
+			background: url('../img/logo-dark-red-dosis-approximate-inline-text150-enlarged.png') no-repeat center;
+
+			background-size: 100%;
+
+			
+
+			min-height: 4%;
+
+		}
+
+		.logo.large{
+
+			background-size: 90%;
+
+			padding: 15px;
+
+			border: 1px solid #000;
+
+		}
+
+		button#showLeftPush{
+
+			display: none;
+
+		}
+
+		.cbp-spmenu {
+
+			background: transparent;
+
+			position: relative;
+
+            top: auto;
+
+            opacity: 1;
+
+		}
+
+		.cbp-spmenu-vertical a {
+
+			border: none;
+
+		}
+
+		.cbp-spmenu-left {
+
+			left: 0;
+
+		}
+
+		.cbp-spmenu-vertical{
+
+			width: auto;
+
+		}
+
+		.menu li a{
+
+			font-size: 1.5em;
+
+		}
+
+		.menu ul.menu__list{
+
+			float: left;
+
+			width: 100%;
+
+			margin: 0;
+
+			padding: 0;
+
+		}
+
+		.menu li.menu__item{
+
+			margin-bottom: 20px;
+
+			display: inline-block;
+
+			float: left;
+
+			width: 100%;
+
+		}
+
+
+
+		.menu a.menu__link{
+
+			color: #999;
+
+			font-family: 'Open Sans', sans-serif;
+
+			font-size: 14px;
+
+			display: inline-block;
+
+			width: 100%;
+
+			padding: 20px 0;
+
+		*/}
+
+		div#main:after{
+
+			opacity: 0.6;
+
+			top: 152px;
+
+		}
+
+		div#main.damask:after{
+
+			opacity: 0.1;
+
+		}
+
+        .twelve.columns.project_list{
+
+            left: 0;
+
+            min-height: 100%;
+
+         }
+
+         .current-projects, .associate_artist{
+
+         	position: relative;
+
+    		width: 48%;
+
+    		transition: all 0.25s ease-in-out;
+
+		    display: inline-block;
+
+		    margin: 0 2% 2% -1%;
+
+		    padding: 0;
+
+         }
+
+         .projects.nine.columns{
+
+         	margin-left: 4%;
+
+         }
+
+         body.home.page #page.hfeed #content.site-content .content-area #main .row .projects .current-projects {
+
+		    width: 48%;
+
+		    float: left;
+
+		    margin: 0 2% 2% 0;
+
+		}
+
+		/*.current-projects.not-first:nth-child(8n+4){
+
+			float: right;
+
+		}*/
+
+		div.current-projects > div.description{
+
+			display: block;
+
+		}
+
+	.headline h3.associate_artist_title{
+
+		font-size: 8rem;
+
+	}
+
+	.contactinfo h1{
+
+		margin-top: 5%;
+
+	}
+
+	#contact .contactinfo .four.columns, #contact #contact_form form.form .four.columns { width: 30.6666666667%; }
+
+	form.form{
+
+		transform: translateY(30%);
+
+	}
+
+	.input.input--haruki.twelve.columns{
+
+		margin-top: 75px;
+
+	}
+
+	button.submission{
+
+		margin-top: 50px;
+
+	}
+
+	.contact_center{
+
+		padding: 0;
+
+	}
+
+	.contactinfo h1, .contactinfo .address{
+
+		text-align: left;
+
+	}
+
+	.twelve.columns.gif-vid{
+
+		margin-bottom: 55px;
+
+	}	
+
+	.current-projects.proj_details_ani span.project{
+
+		width: 40%;
+
+		float: right;
+
+	}
+
+	.current-projects.not-first.proj_details_ani span.project_details{
+
+		width: 60%;
+
+		float: left;
+
+	}
+
+	/*.current-projects.not-first.proj_details_ani span.project_details , 
+
+
+
+	.current-projects.not-first.proj_details_ani span.project {
+
+		height: 500px;
+
+		width: 100%;
+
+	}*/
+
+	
+
+}
+
+
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {}
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,800);
+
+
+
+
+
+@font-face {
+
+  font-family: "31brklyn";
+
+  src:url("fonts/31brklyn.eot");
+
+  src:url("fonts/31brklyn.eot?#iefix") format("embedded-opentype"),
+
+    url("fonts/31brklyn.woff") format("woff"),
+
+    url("fonts/31brklyn.ttf") format("truetype"),
+
+    url("fonts/31brklyn.svg#31brklyn") format("svg");
+
+  font-weight: normal;
+
+  font-style: normal;
+
+
+
+}
