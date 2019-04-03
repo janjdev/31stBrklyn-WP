@@ -27,7 +27,6 @@
       <div class="widget-text">
         <ul class="about_nav">
           <li><a href="<?php echo get_post_meta($post->ID, 'founder-site', true); ?>"><?php echo get_post_meta($post->ID, 'founder-name', true); ?></a></li>
-          <!-- <li><a href="">Our Place</a></li> -->
         </ul>
       </div>
       <br>

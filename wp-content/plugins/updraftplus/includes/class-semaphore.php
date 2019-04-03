@@ -1,7 +1,7 @@
 <?php
-// Adapted from WP Social under the GPL - thanks to Alex King (https://github.com/crowdfavorite/wp-social)
 /**
  * Semaphore Lock Management
+ * Adapted from WP Social under the GPL - thanks to Alex King (https://github.com/crowdfavorite/wp-social)
  */
 class UpdraftPlus_Semaphore {
 
@@ -16,7 +16,9 @@ class UpdraftPlus_Semaphore {
 	}
 
 	/**
-	 * @var bool
+	 * Lock Broke
+	 *
+	 * @var boolean
 	 */
 	protected $lock_broke = false;
 
@@ -37,7 +39,7 @@ class UpdraftPlus_Semaphore {
 			 WHERE option_name = 'updraftplus_unlocked_".$this->lock_name."'
 		");
 
-		if ($affected == '0' and !$this->stuck_check()) {
+		if ('0' == $affected && !$this->stuck_check()) {
 			$updraftplus->log('Semaphore lock ('.$this->lock_name.', '.$wpdb->options.') failed (line '.__LINE__.')');
 			return false;
 		}
@@ -49,7 +51,7 @@ class UpdraftPlus_Semaphore {
 			 WHERE option_name = 'updraftplus_semaphore_".$this->lock_name."'
 			   AND option_value = '0'
 		");
-		if ($affected != '1') {
+		if ('1' != $affected) {
 			if (!$this->stuck_check()) {
 				$updraftplus->log('Semaphore lock ('.$this->lock_name.', '.$wpdb->options.') failed (line '.__LINE__.')');
 				return false;
@@ -77,11 +79,43 @@ class UpdraftPlus_Semaphore {
 		return true;
 	}
 
+	public static function ensure_semaphore_exists($semaphore) {
+		// Make sure the options for semaphores exist
+		global $wpdb, $updraftplus;
+		$results = $wpdb->get_results("
+			SELECT option_id
+				FROM $wpdb->options
+				WHERE option_name IN ('updraftplus_locked_$semaphore', 'updraftplus_unlocked_$semaphore', 'updraftplus_last_lock_time_$semaphore', 'updraftplus_semaphore_$semaphore')
+		");
+
+		if (!is_array($results) || count($results) < 3) {
+		
+			if (is_array($results) && count($results) > 0) {
+				$updraftplus->log("Semaphore ($semaphore, ".$wpdb->options.") in an impossible/broken state - fixing (".count($results).")");
+			} else {
+				$updraftplus->log("Semaphore ($semaphore, ".$wpdb->options.") being initialised");
+			}
+			
+			$wpdb->query("
+				DELETE FROM $wpdb->options
+				WHERE option_name IN ('updraftplus_locked_$semaphore', 'updraftplus_unlocked_$semaphore', 'updraftplus_last_lock_time_$semaphore', 'updraftplus_semaphore_$semaphore')
+			");
+			
+			$wpdb->query($wpdb->prepare("
+				INSERT INTO $wpdb->options (option_name, option_value, autoload)
+				VALUES
+				('updraftplus_unlocked_$semaphore', '1', 'no'),
+				('updraftplus_last_lock_time_$semaphore', '%s', 'no'),
+				('updraftplus_semaphore_$semaphore', '0', 'no')
+			", current_time('mysql', 1)));
+		}
+	}
+	
 	/**
 	 * Increment the semaphore.
 	 *
-	 * @param  array  $filters
-	 * @return Social_Semaphore
+	 * @param  array $filters
+	 * @return Updraft_Semaphore
 	 */
 	public function increment(array $filters = array()) {
 		global $wpdb;
@@ -93,8 +127,7 @@ class UpdraftPlus_Semaphore {
 					$this->increment();
 				}
 			}
-		}
-		else {
+		} else {
 			$wpdb->query("
 				UPDATE $wpdb->options
 				   SET option_value = CAST(option_value AS UNSIGNED) + 1
@@ -140,7 +173,7 @@ class UpdraftPlus_Semaphore {
 			 WHERE option_name = 'updraftplus_locked_".$this->lock_name."'
 		");
 
-		if ($result == '1') {
+		if ('1' == $result) {
 			$updraftplus->log('Semaphore ('.$this->lock_name.') unlocked');
 			return true;
 		}
@@ -180,5 +213,4 @@ class UpdraftPlus_Semaphore {
 
 		return false;
 	}
-
 } // End UpdraftPlus_Semaphore

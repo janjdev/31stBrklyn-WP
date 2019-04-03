@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: fruitfulcode
-Donate link: http://fruitfulcode.com/
+Donate link: https://maintenance.fruitfulcode.com/
 Tags: maintenance, maintenance mode, coming soon, splash page, under-construction, 503 error, administration, login, customize page, background, fullscreen, blur
 Requires at least: 3.5
-Tested up to: 4.8
-Stable tag: 3.5.1
+Tested up to: 4.9.4
+Stable tag: 3.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,16 +12,16 @@ Maintenance - easy configure and customize coming soon, under construction page 
 
 == Description ==
 
-Maintenance plugin allow WordPress site administrator close the website for maintenance, enable "503 Service temporarily unavailable”, set a temporary page with authorization, which can be edited via the plugin settings. Easy customize, good look on all devices. Add your logo, background image, select the desired color, add text. Extended version of the plugin includes more settings that appear after installation PRO extension plugin.
+The Maintenance plugin allows the WordPress site administrator to close the website for maintenance, enable the “503 Service Temporarily Unavailable” error, and set the temporary authorization page, which can be edited via the plugin settings. It is highly customizable and looks good on all devices due to the responsive layout. You can add your logo, background image, text, and select the desired color to preserve brand identity. The extended version of the plugin includes more settings that become available upon installation of the PRO extension plugin. <a target="_blank" href="https://maintenance.fruitfulcode.com/">Check out the PRO version - a feature-rich maintenance plugin for WordPress</a>
 
 https://www.youtube.com/watch?v=Z5v9Ju52nmg
 
 <h3>Features</h3>
 <ul>
-<li>Html/CSS layout without images (retina ready) </li>
+<li>HTML/CSS layout without images (retina ready) </li>
 <li>Fullscreen background (<a target="_blank" href="https://github.com/srobbin/jquery-backstretch">Backstretch</a>)</li>
 <li>Blur background effect</li>
-<li>Upload own logo and retina</li>
+<li>Upload your own logo and retina</li>
 <li>Configurable colors: fonts, icons, background</li>
 <li>Add your title, headline, text</li>
 <li>User login with validation</li>
@@ -34,26 +34,26 @@ https://www.youtube.com/watch?v=Z5v9Ju52nmg
 </ul>
 
 
-<a target="_blank" href="http://plugins.fruitfulcode.com/maintenance/">View demo</a>
+<a target="_blank" href="https://maintenance.fruitfulcode.com/">View demo</a>
 
 
 <h3>Maintenance PRO</h3>
-<strong>Required Free version.</strong> All features from FREE version included + 
+<strong>Required Free version.</strong> All features from the FREE version included + 
 
 <ul>
 <li>Unique scheduler countdown</li>
 <li>User permissions</li>
 <li>Fullscreen background gallery</li>
 <li>Gallery patterns overlays</li> 
-<li>Background gallery with overlay</li>
-<li>Background video from media gallery</li>
+<li>Background gallery with the overlay</li>
+<li>Background video from the media gallery</li>
 <li>Background video from Youtube/Vimeo</li>
 <li>Additional HTML area</li>
 <li>Social media profiles (<a target="_blank" href="http://zurb.com/playground/foundation-icons">Foundation icons</a>)</li>
 <li>Email newsletter subscribe form (<a target="_blank" href="http://mailchimp.com/">MailChimp</a> and  <a href="https://www.campaignmonitor.com/">Campaign Monitor</a> integration) </li>
 </ul>
 
-<a target="_blank" href="http://codecanyon.net/item/maintenance-wordpress-plugin/2781350?ref=fruitfulcode">Get additional functionality</a>
+<a target="_blank" href="https://maintenance.fruitfulcode.com/">Get additional functionality</a>
 
 <h3>Translation</h3>
 
@@ -74,20 +74,21 @@ https://www.youtube.com/watch?v=Z5v9Ju52nmg
 <li>Dutch (nl_NL)</li>
 </ul>
 
-<p>If you would like to create translation to your native language, you can send the <a target="_blank" href="http://codex.wordpress.org/Translating_WordPress">text of PO and MO files</a> to the <a href="http://fruitfulcode.com" target="_blank">Fruitful Code</a> and we'll add it to the next plugin update.</p><p> You can download the latest version of the program for work with PO and MO files <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.</p>
+<p>If you would like to create a new translation to your native language, you can send the <a target="_blank" href="http://codex.wordpress.org/Translating_WordPress">text of PO and MO files</a> to the <a href="http://fruitfulcode.com" target="_blank">Fruitful Code</a> and we’ll include it into the next plugin update.</p><p> You can download the latest version of the program to work with the PO and MO files - <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.</p>
+<p>This plugin is 100% <a target="_blank" href="https://maintenance.fruitfulcode.com/license/">GPL</a>.</p>
 
 <h3>Technical support</h3>
 If you have any questions or recommendations regarding the functionality of our plugins (existing options, new options, current issues), please feel free to contact us.
 
-<h3>How to thank a developers</h3>
+<h3>How to thank developers</h3>
 <ol>
-<li>If you like our plugin and want to say us thank you, please <a href="http://wordpress.org/support/view/plugin-reviews/maintenance?filter=5">leave us review</a></li>
-<li>Make review in your blog or journal with URL link to official plugin page and plugin demo </li>
+<li>If you like our plugin and want to thank us, please <a href="http://wordpress.org/support/view/plugin-reviews/maintenance?filter=5">leave us a review</a></li>
+<li>Make a review on your blog or in the journal with the URL link to the official plugin page and plugin demo </li>
 <li>Recommend "Maintenance plugin" to your friends</li>
-<li>Each purchasing of <a target="_blank" href="http://codecanyon.net/item/maintenance-wordpress-plugin/2781350?ref=fruitfulcode">PRO</a> version make us more happy</li>
+<li>Each purchasing of <a target="_blank" href="https://maintenance.fruitfulcode.com/">PRO</a> version make us happier</li>
 </ol>
 
-Thanks for using.
+Thanks for using!
 
 == Installation ==
 
@@ -97,6 +98,9 @@ Thanks for using.
 
 == Screenshots ==
 1. Maintenance options page
+2. Default maintenance page
+3. Customized maintenance page
+4. Login sidebar
 
 == Frequently Asked Questions ==
 
@@ -119,8 +123,23 @@ No, it will be display error on current maintenance page, without redirect to wp
 = I haven’t found an answer to my question, what should I do? = 
 You can check <a href="http://wordpress.org/support/plugin/maintenance">support forum</a> or <a class="send-mail" target="_blank" href="mailto:mail@fruitfulcode.com?subject=Maintenance%20Plugin">send email to us</a>
 
-
 == Change log ==
+= 3.6.1 =
+- Improvement: setting max width logo size
+- Bug fix: Change template_include hook priority
+- Bug fix: Fix container height
+- Bug fix: logo size cropping
+- Bug fix: fonts subsets fix
+
+= 3.6 =
+- Update: Optimized js libs
+- Update: Replaced some features by new css and html5 capabilities
+- Update: Refreshed google fonts
+- New: Change preloader icon in admin panel
+- New: Uploading image for portrait device orientation
+- New: Add authorization error text to login panel
+- New: Select login panel bg color
+- New: Add some css effects
 
 = 3.5.1 =
 - Bugfix: Js cache with server options

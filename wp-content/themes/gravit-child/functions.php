@@ -207,7 +207,7 @@ function brklyn_theme_scripts(){
 
 	wp_enqueue_style('brklyn_google_logo_font', '//fonts.googleapis.com/css?family=Dosis:400,800');
 	wp_enqueue_style('fontAwesomeBootStrap', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
-	wp_enqueue_style('31stBrklyn_font', 'http://31stbrklyn.com/wp-content/themes/gravit-child/fonts/font.css');
+	wp_enqueue_style('31stBrklyn_font', get_stylesheet_directory_uri() . 'fonts/font.css');
 
 
 

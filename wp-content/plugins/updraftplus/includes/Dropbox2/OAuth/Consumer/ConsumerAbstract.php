@@ -81,7 +81,7 @@ abstract class Dropbox_ConsumerAbstract
     private function upgradeOAuth()
     {
 		// N.B. This call only exists under API v1 - i.e. there is no APIv2 equivalent. Hence the APIv1 endpoint (API_URL) is used, and not the v2 (API_URL_V2)
-	    $url = UpdraftPlus_Dropbox_API::API_URL . self::OAUTH_UPGRADE;
+	    $url = 'https://api.dropbox.com/1/' . self::OAUTH_UPGRADE;
 	    $response = $this->fetch('POST', $url, '');
         $token = new stdClass();
         /*
@@ -163,12 +163,14 @@ abstract class Dropbox_ConsumerAbstract
         } else if (!empty($appkey)) {
             $key = $appkey;
         }
+
+        if ('' != $this->instance_id) $this->instance_id = ':'.$this->instance_id;
         
         $params = array(
             'client_id' => empty($key) ? $this->oauth2_id : $key,
             'response_type' => 'code',
             'redirect_uri' => empty($key) ? $this->callback : $this->callbackhome,
-            'state' => empty($key) ? $CSRF.$this->callbackhome : $CSRF,
+            'state' => empty($key) ? "POST:".$CSRF.$this->instance_id.$this->callbackhome : $CSRF.$this->instance_id,
         );
     
         // Build the URL and redirect the user
@@ -292,11 +294,20 @@ abstract class Dropbox_ConsumerAbstract
                 unset($additional['api_v2']);
                 if (isset($additional['content_download']) && $additional['content_download'] == true) {
                     unset($additional['content_download']);
+                    $extra_headers = array();
+                    if (isset($additional['headers'])) {
+                        foreach ($additional['headers'] as $key => $header) {
+                            $extra_headers[] = $header;
+                        }
+                        unset($additional['headers']);
+                    }
                     $headers = array(
                         'Authorization: Bearer '.$params['access_token'],
                         'Content-Type:',
                         'Dropbox-API-Arg: '.json_encode($additional),
                     );
+
+                    $headers = array_merge($headers, $extra_headers);
                     $additional = '';
                 } else if (isset($additional['content_upload']) && $additional['content_upload'] == true) {
                     unset($additional['content_upload']);

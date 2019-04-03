@@ -1,6 +1,6 @@
 <?php
 
-if (!defined ('UPDRAFTPLUS_DIR')) die('No direct access allowed');
+if (!defined('UPDRAFTPLUS_DIR')) die('No direct access allowed');
 
 /*
 These actions are no longer called, except in the case of someone restoring an old version of UD onto a new backend and not refreshing the page. We can keep them around a bit longer to handle that limited case. This generally means that they were replaced by calls to commands in the standardised UpdraftPlus_Commands class.
@@ -10,9 +10,9 @@ These have been removed from admin.php as part of the process of removing them e
 
 global $updraftplus, $updraftplus_admin;
 
-if (isset($_POST['subaction']) && $_POST['subaction'] == 'credentials_test') {
+if (isset($_POST['subaction']) && 'credentials_test' === $_POST['subaction']) {
 
-	$updraftplus_admin->do_credentials_test($_POST);
+	$updraftplus_admin->do_credentials_test(UpdraftPlus_Manipulation_Functions::wp_unslash($_POST));
 	
 } elseif ('poplog' == $_REQUEST['subaction']) {
 
@@ -25,8 +25,7 @@ if (isset($_POST['subaction']) && $_POST['subaction'] == 'credentials_test') {
 
 } elseif ('countbackups' == $_REQUEST['subaction']) {
 
-	$backup_history = UpdraftPlus_Options::get_updraft_option('updraft_backup_history');
-	$backup_history = is_array($backup_history) ? $backup_history : array();
+	$backup_history = UpdraftPlus_Backup_History::get_history();
 	echo __('Existing Backups', 'updraftplus').' ('.count($backup_history).')';
 	
 } elseif ('historystatus' == $subaction) {
@@ -40,9 +39,9 @@ if (isset($_POST['subaction']) && $_POST['subaction'] == 'credentials_test') {
 } elseif ('diskspaceused' == $subaction && isset($_GET['entity'])) {
 	$entity = $_GET['entity'];
 	// This can count either the size of the Updraft directory, or of the data to be backed up
-	echo $updraftplus_admin->get_disk_space_used($entity);
+	echo UpdraftPlus_Filesystem_Functions::get_disk_space_used($entity);
 } elseif ('callwpaction' == $subaction) {
-	$updraftplus_admin->call_wp_action($_REQUEST, true);
+	$updraftplus_admin->call_wp_action(UpdraftPlus_Manipulation_Functions::wp_unslash($_REQUEST), true);
 } elseif ('lastbackup' == $subaction) {
 	echo $updraftplus_admin->last_backup_html();
 }

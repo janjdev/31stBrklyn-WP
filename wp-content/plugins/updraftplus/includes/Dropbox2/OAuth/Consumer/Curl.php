@@ -35,7 +35,7 @@ class Dropbox_Curl extends Dropbox_ConsumerAbstract
      * @param \Dropbox\OAuth\Consumer\StorageInterface $storage
      * @param string $callback
      */
-    public function __construct($key, $oauth2_id, $secret, Dropbox_StorageInterface $storage, $callback = null, $callbackhome = null, $deauthenticate = false)
+    public function __construct($key, $oauth2_id, $secret, Dropbox_StorageInterface $storage, $callback = null, $callbackhome = null, $deauthenticate = false, $instance_id = '')
     {
         // Check the cURL extension is loaded
         if (!extension_loaded('curl')) {
@@ -48,6 +48,7 @@ class Dropbox_Curl extends Dropbox_ConsumerAbstract
         $this->storage = $storage;
         $this->callback = $callback;
         $this->callbackhome = $callbackhome;
+        $this->instance_id = $instance_id;
         
         if ($deauthenticate) {
 			$this->deauthenticate();
@@ -104,15 +105,19 @@ class Dropbox_Curl extends Dropbox_ConsumerAbstract
                   }
             }
         }
-        
-        if (isset($request['headers'])) $options[CURLOPT_HTTPHEADER] = $request['headers'];
 
         /*
             Add check to see if it's an API v2 call if so then json encode the contents. This is so that it is backwards compatible with API v1 endpoints.
          */
         if (isset($additional['api_v2']) && !empty($request['postfields'])) {
             $request['postfields'] = json_encode($request['postfields']);
+        } elseif (empty($request['postfields'])) {
+            // if the postfields are empty then we don't want to send the application/json header if it's set as Dropbox will return an error
+            $key = array_search('Content-Type: application/json', $request['headers']);
+            if (false !== $key) unset($request['headers'][$key]);
         }
+
+        if (isset($request['headers']) && !empty($request['headers'])) $options[CURLOPT_HTTPHEADER] = $request['headers'];
 
         if ($method == 'GET' && $this->outFile) { // GET
             $options[CURLOPT_RETURNTRANSFER] = false;
@@ -120,11 +125,6 @@ class Dropbox_Curl extends Dropbox_ConsumerAbstract
             $options[CURLOPT_FILE] = $this->outFile;
             $options[CURLOPT_BINARYTRANSFER] = true;
             $options[CURLOPT_FAILONERROR] = true;
-            /*
-                Not sure if this is used, keeping it here for backwards compatibility at the moment.
-                With API v2 the headers are set in the $request they are set above if they are set.
-             */
-            if (isset($additional['headers'])) $options[CURLOPT_HTTPHEADER] = $additional['headers'];
             $this->outFile = null;
         }  elseif ($method == 'POST' && $this->outFile) { // POST
             $options[CURLOPT_POST] = true;
@@ -139,7 +139,7 @@ class Dropbox_Curl extends Dropbox_ConsumerAbstract
             $options[CURLOPT_POSTFIELDS] = $this->inFile;
         } elseif ($method == 'POST') { // POST
             $options[CURLOPT_POST] = true;
-			$options[CURLOPT_POSTFIELDS] = $request['postfields'];
+            $options[CURLOPT_POSTFIELDS] = $request['postfields'];
         } elseif ($method == 'PUT' && $this->inFile) { // PUT
             $options[CURLOPT_PUT] = true;
             $options[CURLOPT_INFILE] = $this->inFile;
@@ -222,7 +222,7 @@ class Dropbox_Curl extends Dropbox_ConsumerAbstract
                         throw new Dropbox_UnsupportedMediaTypeException($message, 415);
                     case 401:
                     	//401 means oauth token is expired continue to manually handle the exception depending on the situation
-                    	continue;
+                    	break;
                     case 409:
                         //409 in API V2 every error will return with a 409 to find out what the error is the error description should be checked.                      
                         throw new Dropbox_Exception($message, $code);
