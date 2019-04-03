@@ -77,7 +77,7 @@
 		  </div>
 
 		</div>
-
+		<!-- End Modal -->
 		<div class="site-branding">
 
 			<?php //show title or Header image
