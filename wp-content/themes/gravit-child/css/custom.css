@@ -691,10 +691,6 @@ body:after, .main:after{
 
 ================================================ */
 
-section#about{
-
-}
-
 .headline{
 
 	margin-bottom: 5rem;
@@ -716,9 +712,7 @@ section#about{
 }
 
 .headline span{
-
  color: rgb(205, 3, 4);
-
 }
 
 .headline p{
@@ -735,7 +729,7 @@ section#about{
 
 	font-weight: 400;
 
-	color: #202022;#999;
+	color: #202022; #999;
 
 }
 
@@ -1658,6 +1652,7 @@ footer div.cont_deets{
 		.mission p:first-letter{
 
 			font-size: 9rem;
+			line-height: initial;
 
 		}
 

@@ -94,7 +94,7 @@ get_header(); ?>
 
              
 
-         <div class="twelve columns bottom">
+         <div class="twelve columns">
 
          <div class="three columns artist_bio">
 

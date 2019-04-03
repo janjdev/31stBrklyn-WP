@@ -70,15 +70,15 @@
 
     </aside>
 		<div class="nine columns statements">			
-			<p><?php echo get_post_meta($post->ID, 'slogan', true); ?></p>
+			<p class="slogan"><?php echo get_post_meta($post->ID, 'slogan', true); ?></p>
 		  <div class="bottom">	
 		    <section id="about" class="twelve columns">
-          <div class="headline">
+          <blockquote class="headline">
             <span class="fa fa-quote-left"></span>
 		<?php if ( get_bloginfo( 'description' ) ) { ?>	
           <h3><?php bloginfo( 'description' ); ?></h3>
           <?php } ?>
-          </div>
+          </blockquote>
           <div class="mission"><?php  if (have_posts()) : ?>
              <?php while (have_posts()) : ?>
             <?php  the_post(); ?>
